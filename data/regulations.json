@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-14 16:02:45",
-  "count": 13,
+  "updated_at": "2026-11-14 16:54:52",
+  "count": 9,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -19,7 +19,7 @@
         "全面节约",
         "碳达峰碳中和"
       ],
-      "candidates": 6,
+      "candidates": 3,
       "hits": 1,
       "status": "有新增"
     },
@@ -31,7 +31,7 @@
         "双控",
         "碳排放强度"
       ],
-      "candidates": 8,
+      "candidates": 2,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -45,7 +45,7 @@
         "清缴",
         "扩围"
       ],
-      "candidates": 55,
+      "candidates": 36,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -70,9 +70,9 @@
         "因子数据库",
         "量化方法"
       ],
-      "candidates": 3,
-      "hits": 1,
-      "status": "有新增"
+      "candidates": 1,
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "碳标识认证",
@@ -92,7 +92,7 @@
         "绿色供应链",
         "绿色设计"
       ],
-      "candidates": 18,
+      "candidates": 13,
       "hits": 2,
       "status": "有新增"
     },
@@ -117,9 +117,9 @@
         "能效",
         "重点行业"
       ],
-      "candidates": 15,
-      "hits": 1,
-      "status": "有新增"
+      "candidates": 13,
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "工业节能与综合利用",
@@ -129,9 +129,9 @@
         "工业固废",
         "资源综合利用"
       ],
-      "candidates": 22,
-      "hits": 1,
-      "status": "有新增"
+      "candidates": 4,
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "绿证",
@@ -165,9 +165,9 @@
         "电价",
         "辅助服务"
       ],
-      "candidates": 11,
-      "hits": 1,
-      "status": "有新增"
+      "candidates": 9,
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "氢能",
@@ -177,7 +177,7 @@
         "加氢站",
         "氢燃料"
       ],
-      "candidates": 3,
+      "candidates": 2,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -214,7 +214,7 @@
         "回收体系",
         "废旧"
       ],
-      "candidates": 11,
+      "candidates": 5,
       "hits": 1,
       "status": "有新增"
     },
@@ -226,9 +226,9 @@
         "固废",
         "危废"
       ],
-      "candidates": 9,
-      "hits": 1,
-      "status": "有新增"
+      "candidates": 4,
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "再制造（专项）",
@@ -250,7 +250,7 @@
         "梯次利用",
         "电池回收"
       ],
-      "candidates": 5,
+      "candidates": 2,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -356,19 +356,16 @@
         "status": "有独立发文",
         "ids": [
           4,
-          12
+          9
         ],
         "note": ""
       },
       {
         "name": "工业和信息化部",
-        "count": 2,
-        "status": "有独立发文",
-        "ids": [
-          6,
-          8
-        ],
-        "note": ""
+        "count": 0,
+        "status": "△ 无独立对口发文",
+        "ids": [],
+        "note": "本月未检索到该部门单独发文"
       },
       {
         "name": "生态环境部",
@@ -420,7 +417,7 @@
         "name": "云南",
         "count": 1,
         "ids": [
-          7
+          6
         ]
       },
       {
@@ -437,23 +434,19 @@
       },
       {
         "name": "国家",
-        "count": 7,
+        "count": 5,
         "ids": [
           1,
           3,
           4,
-          6,
           8,
-          11,
-          12
+          9
         ]
       },
       {
         "name": "天津",
-        "count": 1,
-        "ids": [
-          13
-        ]
+        "count": 0,
+        "ids": []
       },
       {
         "name": "宁夏",
@@ -464,7 +457,7 @@
         "name": "山东",
         "count": 1,
         "ids": [
-          9
+          7
         ]
       },
       {
@@ -531,10 +524,8 @@
       },
       {
         "name": "陕西",
-        "count": 1,
-        "ids": [
-          10
-        ]
+        "count": 0,
+        "ids": []
       }
     ],
     "domains": [
@@ -566,11 +557,9 @@
       },
       {
         "name": "产品碳足迹",
-        "count": 1,
-        "ids": [
-          8
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "碳标识认证",
@@ -595,19 +584,15 @@
       },
       {
         "name": "节能降碳",
-        "count": 1,
-        "ids": [
-          10
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "工业节能与综合利用",
-        "count": 1,
-        "ids": [
-          6
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "绿证",
@@ -623,11 +608,9 @@
       },
       {
         "name": "电力市场与煤电",
-        "count": 1,
-        "ids": [
-          13
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "氢能",
@@ -640,7 +623,7 @@
         "count": 2,
         "ids": [
           1,
-          12
+          9
         ],
         "status": "有"
       },
@@ -654,23 +637,21 @@
         "name": "再生资源回收利用",
         "count": 1,
         "ids": [
-          9
+          7
         ],
         "status": "有"
       },
       {
         "name": "固体废物与危险废物",
-        "count": 1,
-        "ids": [
-          6
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "再制造（专项）",
         "count": 1,
         "ids": [
-          7
+          6
         ],
         "status": "有"
       },
@@ -716,7 +697,7 @@
         "name": "认证认可与合格评定",
         "count": 1,
         "ids": [
-          11
+          8
         ],
         "status": "有"
       },
@@ -751,6 +732,13 @@
       "last_publisher": ""
     },
     {
+      "name": "产品碳足迹",
+      "last_title": "",
+      "last_date": "",
+      "last_url": "",
+      "last_publisher": ""
+    },
+    {
       "name": "碳标识认证",
       "last_title": "",
       "last_date": "",
@@ -763,6 +751,20 @@
       "last_date": "",
       "last_url": "",
       "last_publisher": ""
+    },
+    {
+      "name": "节能降碳",
+      "last_title": "",
+      "last_date": "",
+      "last_url": "",
+      "last_publisher": ""
+    },
+    {
+      "name": "工业节能与综合利用",
+      "last_title": "关于组织开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
+      "last_date": "2026-10-28",
+      "last_url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202610/t20261028_4921964.html",
+      "last_publisher": "北京市经济和信息化局"
     },
     {
       "name": "绿证",
@@ -779,6 +781,13 @@
       "last_publisher": ""
     },
     {
+      "name": "电力市场与煤电",
+      "last_title": "国家能源局关于推动煤电与新能源融合发展的实施意见",
+      "last_date": "2026-10-21",
+      "last_url": "http://www.nea.gov.cn/20261021/fbd5cb3be4584be88f63046ffb0155fc/c.html",
+      "last_publisher": "国家能源局"
+    },
+    {
       "name": "氢能",
       "last_title": "数字人解读《北京市氢能产业发展实施方案（2026—2030年）》",
       "last_date": "2026-10-30",
@@ -787,6 +796,13 @@
     },
     {
       "name": "循环经济",
+      "last_title": "",
+      "last_date": "",
+      "last_url": "",
+      "last_publisher": ""
+    },
+    {
+      "name": "固体废物与危险废物",
       "last_title": "",
       "last_date": "",
       "last_url": "",
@@ -841,6 +857,70 @@
       "status": "未采集成功（全库为 JS 单页应用，列表接口需交互参数，暂以全国人大网替代）"
     },
     {
+      "item": "信息源：自然资源部",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：住房城乡建设部",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：上海环交所",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 420, 6988B）"
+    },
+    {
+      "item": "信息源：天津市工信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 403, 13B）"
+    },
+    {
+      "item": "信息源：河北省工信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：唐山市工信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 405, 4644B）"
+    },
+    {
+      "item": "信息源：山西省工信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：大连市工信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：浙江省经信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+    },
+    {
+      "item": "信息源：杭州市经信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+    },
+    {
+      "item": "信息源：嘉兴市经信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+    },
+    {
+      "item": "信息源：深圳市工信局",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：重庆市经信委",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：四川省经信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：陕西省工信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+    },
+    {
+      "item": "信息源：河南省工信厅",
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 403, 1621B）"
+    },
+    {
       "item": "信息源：上海市经信委",
       "status": "未采集成功（该域名在当前网络环境不可达，境内网络可启用）"
     },
@@ -849,7 +929,7 @@
       "status": "未采集成功（TLS 握手失败（SSLError），境内网络可启用）"
     },
     {
-      "item": "8 条文件未在网页正文体现文号",
+      "item": "6 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
@@ -903,8 +983,8 @@
       "name": "工业和信息化部",
       "adapter": "browser",
       "ok": true,
-      "candidates": 69,
-      "hit": 4,
+      "candidates": 3,
+      "hit": 0,
       "error": "",
       "group": "部委"
     },
@@ -929,19 +1009,19 @@
     {
       "name": "自然资源部",
       "adapter": "html",
-      "ok": true,
-      "candidates": 211,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "部委"
     },
     {
       "name": "住房城乡建设部",
       "adapter": "html",
-      "ok": true,
-      "candidates": 96,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "部委"
     },
     {
@@ -966,7 +1046,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 236,
+      "candidates": 235,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1046,10 +1126,10 @@
     {
       "name": "上海环交所",
       "adapter": "html",
-      "ok": true,
-      "candidates": 55,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: HTTP 420, 6988B",
       "group": "碳市场"
     },
     {
@@ -1109,37 +1189,37 @@
     {
       "name": "天津市工信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 64,
-      "hit": 1,
-      "error": "RuntimeError: HTTP 200, 267B",
+      "ok": false,
+      "candidates": 0,
+      "hit": 0,
+      "error": "discover:RuntimeError; RuntimeError: HTTP 403, 13B",
       "group": "地方"
     },
     {
       "name": "河北省工信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 114,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
       "name": "唐山市工信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 97,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: HTTP 405, 4644B",
       "group": "地方"
     },
     {
       "name": "山西省工信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 144,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
@@ -1154,10 +1234,10 @@
     {
       "name": "大连市工信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 40,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
@@ -1190,28 +1270,28 @@
     {
       "name": "浙江省经信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 131,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
       "group": "地方"
     },
     {
       "name": "杭州市经信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 57,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
       "group": "地方"
     },
     {
       "name": "嘉兴市经信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 42,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
       "group": "地方"
     },
     {
@@ -1271,10 +1351,10 @@
     {
       "name": "深圳市工信局",
       "adapter": "html",
-      "ok": true,
-      "candidates": 169,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
@@ -1289,28 +1369,28 @@
     {
       "name": "重庆市经信委",
       "adapter": "html",
-      "ok": true,
-      "candidates": 23,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "RuntimeError: HTTP 200, 312B",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
       "name": "四川省经信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 274,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
       "name": "陕西省工信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 115,
-      "hit": 2,
-      "error": "",
+      "ok": false,
+      "candidates": 0,
+      "hit": 0,
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "地方"
     },
     {
@@ -1343,10 +1423,10 @@
     {
       "name": "河南省工信厅",
       "adapter": "html",
-      "ok": true,
-      "candidates": 136,
+      "ok": false,
+      "candidates": 0,
       "hit": 0,
-      "error": "",
+      "error": "discover:RuntimeError; RuntimeError: HTTP 403, 1621B",
       "group": "地方"
     },
     {
@@ -1515,38 +1595,6 @@
       "points": [],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
-      "title": "关于征集硫酸法锂渣综合利用先进适用技术的通知",
-      "url": "https://jxt.sc.gov.cn/scjxt/wjfb/2026/10/29/2902c56553544979b4cf8c1d8aa054cf.shtml",
-      "date_hint": "",
-      "date": "2026-10-29",
-      "doc_no": "川经信办函〔2026〕367号",
-      "publisher": "四川省经济和信息化厅",
-      "region": "四川",
-      "level": "地方",
-      "source": "四川省经信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "工业节能与综合利用"
-      ],
-      "points": [
-        {
-          "label": "适用范围",
-          "text": "为贯彻落实省委、省政府关于“加强工业固废综合利用”部署要求，加快综合利用先进适用技术推广应用，推动多途径、高值化、规模化利用，经研究决定公开征集硫酸法锂渣综合利用先进适用技术"
-        },
-        {
-          "label": "其他要求",
-          "text": "在四川省内依法注册、具有独立法人资格的企事业单位、高校、科研院所"
-        },
-        {
-          "label": "其他要求",
-          "text": "符合相关法律法规、产业政策、环保标准，无政策及合规性风险"
-        }
-      ],
-      "attach_only": false,
-      "note": ""
     },
     {
       "title": "关于组织开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
@@ -1724,6 +1772,46 @@
       "points": [],
       "attach_only": true,
       "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄"
+    },
+    {
+      "title": "国家能源局关于推动煤电与新能源融合发展的实施意见",
+      "url": "http://www.nea.gov.cn/20261021/fbd5cb3be4584be88f63046ffb0155fc/c.html",
+      "date_hint": "2026-10-21",
+      "date": "2026-10-21",
+      "doc_no": "国能发电力〔2026〕69号",
+      "publisher": "国家能源局",
+      "region": "国家",
+      "level": "部委",
+      "source": "国家能源局",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "电力市场与煤电"
+      ],
+      "points": [
+        {
+          "label": "奖惩监管",
+          "text": "加大中央资金支持力度，对符合条件的煤电与新能源融合项目予以资金补助"
+        },
+        {
+          "label": "目标任务",
+          "text": "支持新能源与公用煤电机组供热系统协同运行，提升煤电机组调峰顶峰能力等涉网性能，降低供热受阻比例"
+        },
+        {
+          "label": "其他要求",
+          "text": "支持各省级能源主管部门会同有关部门结合本地区实际制定本地区支持煤电与新能源融合发展的细化政策举措，明确电网线路资产处置要求、融合项目顶峰能力核定等，完善市场和价格机制，加强要素保障，指导电网企业、发电企业做好项目落地建设运行"
+        },
+        {
+          "label": "目标任务",
+          "text": "鼓励融合项目年度碳排放水平较融合前降低5%以上，力争降低10%以上"
+        },
+        {
+          "label": "目标任务",
+          "text": "鼓励融合项目年度碳排放水平应较融合前降低5%以上，力争降低10%以上"
+        }
+      ],
+      "attach_only": false,
+      "note": ""
     }
   ],
   "items": [
@@ -1872,28 +1960,6 @@
       "week": "第一周（1—10日）"
     },
     {
-      "title": "中华人民共和国工业和信息化部公告（废止《工业固体废物资源综合利用评价管理暂行办法》和《国家工业固体废物资源综合利用产品目录》）",
-      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/gg/art/2026/art_91fd2e935429436fb64e57e902f43769.html",
-      "date_hint": "2026-11-05",
-      "date": "2026-11-05",
-      "doc_no": "",
-      "publisher": "工业和信息化部",
-      "region": "国家",
-      "level": "部委",
-      "source": "工业和信息化部",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "工业节能与综合利用",
-        "固体废物与危险废物"
-      ],
-      "points": [],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 6,
-      "week": "第一周（1—10日）"
-    },
-    {
       "title": "云南省报废机动车回收拆解企业资质认定情况公示",
       "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202611/t20261105_4381077.html",
       "date_hint": "",
@@ -1916,28 +1982,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 7,
-      "week": "第一周（1—10日）"
-    },
-    {
-      "title": "工业和信息化部等四部门关于公布工业产品碳足迹核算规则团体标准推荐清单（第四批）的通告",
-      "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tg/art/2026/art_75e686fcee584f238dd30f30a1b6a289.html",
-      "date_hint": "2026-11-06",
-      "date": "2026-11-06",
-      "doc_no": "工信部联节函〔2026〕384号",
-      "publisher": "工业和信息化部",
-      "region": "国家",
-      "level": "部委",
-      "source": "工业和信息化部",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "产品碳足迹"
-      ],
-      "points": [],
-      "attach_only": false,
-      "note": "",
-      "no": 8,
+      "no": 6,
       "week": "第一周（1—10日）"
     },
     {
@@ -1979,29 +2024,8 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 9,
+      "no": 7,
       "week": "第一周（1—10日）"
-    },
-    {
-      "title": "关于2026年省级能效标杆、节水标杆及工业废水循环利用试点名单的公示",
-      "url": "https://gxt.shaanxi.gov.cn/xw/tzgg/202611/t20261111_3723771.html",
-      "date_hint": "",
-      "date": "2026-11-11",
-      "doc_no": "",
-      "publisher": "陕西省工业和信息化厅",
-      "region": "陕西",
-      "level": "地方",
-      "source": "陕西省工信厅",
-      "nature": "公示/名单",
-      "type": "",
-      "domains": [
-        "节能降碳"
-      ],
-      "points": [],
-      "attach_only": true,
-      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；文号未在网页正文中体现，以正式文本为准",
-      "no": 10,
-      "week": "第二周（11—17日）"
     },
     {
       "title": "【进行中】 关于CNAS-RL01《实验室认可规则》等四份文件修订公开征求意见的通知",
@@ -2030,7 +2054,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 11,
+      "no": 8,
       "week": "第二周（11—17日）"
     },
     {
@@ -2051,45 +2075,7 @@
       "points": [],
       "attach_only": true,
       "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-13），可作口径参考：http://www.nea.gov.cn/home/zcfg/20261113/6a2b2141529448ddb8650df1784abe73/c.html",
-      "no": 12,
-      "week": "第二周（11—17日）"
-    },
-    {
-      "title": "市工业和信息化局关于做好天津市2027年电力市场化交易工作的通知",
-      "url": "https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202611/t20261113_7655646.html",
-      "date_hint": "2026-11-13",
-      "date": "2026-11-13",
-      "doc_no": "津工信电力〔2026〕19号",
-      "publisher": "天津市工业和信息化局",
-      "region": "天津",
-      "level": "地方",
-      "source": "天津市工信局",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "电力市场与煤电"
-      ],
-      "points": [
-        {
-          "label": "奖惩监管",
-          "text": "交易各方在交易过程中要严格遵守法律法规和有关规则，自觉维护好电力市场秩序，交易过程中不得与其他交易主体串通报价"
-        },
-        {
-          "label": "奖惩监管",
-          "text": "交易各方应根据自身生产经营等情况据实申报电量、电价，市场主体不得恶意报量、报价或恶性竞争，影响市场交易正常进行"
-        },
-        {
-          "label": "其他要求",
-          "text": "有关要求，深入推进电力市场建设，保障电力安全稳定供应，营造良好营商环境，稳妥开展天津市"
-        },
-        {
-          "label": "奖惩监管",
-          "text": "如出现违反有关规则、扰乱市场秩序等现象影响交易正常开展时，将视情况暂停、调整或终止交易，并依法依规追究相关单位或个人责任"
-        }
-      ],
-      "attach_only": false,
-      "note": "",
-      "no": 13,
+      "no": 9,
       "week": "第二周（11—17日）"
     }
   ]
