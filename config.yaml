@@ -111,6 +111,10 @@ sources:
   - {group: 认证标准, name: CCAA, region: 国家, org: 中国认证认可协会, adapter: html, url: "http://www.ccaa.org.cn/"}
   - {group: 认证标准, name: 全国标准信息公共服务平台, region: 国家, org: 国家标准化管理委员会, adapter: html, url: "https://std.samr.gov.cn/"}
 
+  # ===== 研究机构 =====
+  # 环境规划院：政策/规划栏目多为研究报告与解读，无正式文号，关闭文件类型过滤仅保留关键词筛选
+  - {group: 专项, name: 生态环境部环境规划院, region: 国家, org: 生态环境部环境规划院, adapter: html, url: "http://www.caep.org.cn/ywdt/zc/", urls: ["http://www.caep.org.cn/ywdt/gh/"], skip_doc_filter: true}
+
   # ===== 碳市场 =====
   - {group: 碳市场, name: 中碳登, region: 国家, org: 全国碳排放权注册登记机构, adapter: html, url: "https://www.ccn.ac.cn/esg"}
   - {group: 碳市场, name: 上海环交所, region: 上海, org: 上海环境能源交易所, adapter: browser, url: "https://www.cneeex.com/"}

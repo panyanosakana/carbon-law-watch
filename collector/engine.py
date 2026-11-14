@@ -202,6 +202,12 @@ def extract_candidates(html: str, base_url: str) -> list[dict]:
         url = urljoin(base_url, href)
         if not url.startswith("http") or url in seen:
             continue
+        if not date:
+            # 列表页无日期时，从链接文件名兜底：政府站常见 t20261103_1185179.html
+            fn = url.rsplit("/", 1)[-1]
+            m = re.search(r"[t_](20\d{2})(\d{2})(\d{2})[_.]", fn)
+            if m:
+                date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
         seen.add(url)
         items.append({"title": title, "url": url, "date_hint": date})
     return items
@@ -440,12 +446,13 @@ def process_source(src, cfg, fetcher, browser):
         status["candidates"] = len(cands)
         excl = cfg.get("exclude", [])
         kw = src.get("keywords_any") or cfg["keywords"]["core"]
+        need_doc = not src.get("skip_doc_filter")
         picked = []
         for cd in cands:
             t = cd["title"]
             if any(x in t for x in excl):
                 continue
-            if not is_document(t):
+            if need_doc and not is_document(t):
                 continue
             if any(k in t for k in kw):
                 picked.append(cd)
@@ -476,13 +483,17 @@ def process_source(src, cfg, fetcher, browser):
 
     core = cfg["keywords"]["core"]
     excl = cfg.get("exclude", [])
+    need_doc = not src.get("skip_doc_filter")
     picked = []
     for c in cands:
         t = c["title"]
         if any(x in t for x in excl):
             continue
-        if not is_document(t):
-            continue
+        if need_doc:
+            if not is_document(t):
+                continue
+        elif not c.get("date_hint"):
+            continue          # 关闭文件类型过滤时，用"必须有日期"排除导航链接
         if any(k in t for k in core):
             picked.append(c)
     picked = picked[: c.get("max_candidates", 25)]
