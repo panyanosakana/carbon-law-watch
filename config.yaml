@@ -69,6 +69,23 @@ exclude: [招聘, 面试, 人事任免, 感谢信, 中标结果, 成交公告, �
 # ------------------------------------------------------------
 sources:
   # ===== 顶层 =====
+  # 全国人大「法律草案征求意见」：页面为 JS 渲染，直接对接其 JSON 接口（flag=0 正在征求意见）
+  - group: 顶层
+    name: 全国人大法律草案征求意见
+    region: 国家
+    org: 全国人大及其常委会
+    adapter: api
+    url: "http://www.npc.gov.cn/flcaw/"
+    keywords_any: [能源, 环境, 生态, 碳, 气候, 电力, 资源, 节约, 循环, 清洁, 可再生, 氢, 排放, 污染, 固体废物, 节能, 绿色]
+    default_domain: 碳达峰碳中和
+    api:
+      list: "http://www.npc.gov.cn/flcaw/flca-list?flag=0&type=0&page=1&per_page=100"
+      title_field: flxxmc
+      date_field: ksrq
+      id_field: flxxId
+      link: "http://www.npc.gov.cn/flcaw/userIndex.html?lid={id}"
+      note: "征求意见期 {ksrq} 至 {jsrq}；已有 {gzrs} 人参与、收到 {gzyj} 条意见"
+
   - {group: 顶层, name: 中国政府网, region: 国家, org: 国务院, adapter: browser, url: "https://www.gov.cn/zhengce/zuixin/"}
   - {group: 顶层, name: 全国人大网, region: 国家, org: 全国人大及其常委会, adapter: html, url: "http://www.npc.gov.cn/"}
   - {group: 顶层, name: 司法部, region: 国家, org: 司法部, adapter: html, url: "https://www.moj.gov.cn/flfggz/flfggzbmgz/"}

@@ -101,16 +101,21 @@ def week_of(day: int) -> str:
 def enrich_v3(item, src, cfg, fetcher, domains):
     item = dict(item)
     all_keys = [k for d in domains for k in d["keys"]]
+    is_api = src.get("adapter") == "api"
     text = ""
-    try:
-        html = fetcher.get(item["url"], src["url"], cfg["collect"]["timeout"])
-        text, head = article_text(html)
-        d = parse_date(head)
-        if d and d > (datetime.now(CST) + timedelta(days=7)).strftime("%Y-%m-%d"):
-            d = ""
-        item["date"] = parse_date(item.get("date_hint", "")) or d or ""
-    except Exception:
+    if is_api:
+        # 接口型源：字段已由接口给出，详情页是 JS 渲染，不再抓正文
         item["date"] = parse_date(item.get("date_hint", ""))
+    else:
+        try:
+            html = fetcher.get(item["url"], src["url"], cfg["collect"]["timeout"])
+            text, head = article_text(html)
+            d = parse_date(head)
+            if d and d > (datetime.now(CST) + timedelta(days=7)).strftime("%Y-%m-%d"):
+                d = ""
+            item["date"] = parse_date(item.get("date_hint", "")) or d or ""
+        except Exception:
+            item["date"] = parse_date(item.get("date_hint", ""))
 
     item["title"] = normalize_title(item["title"])
     year = str(datetime.now(CST).year)
@@ -125,11 +130,19 @@ def enrich_v3(item, src, cfg, fetcher, domains):
     doms = match_domains(item["title"], domains)
     if not doms and text:
         doms = match_domains(text[:6000], domains, limit=2)
+    if not doms and is_api and src.get("default_domain"):
+        doms = [src["default_domain"]]
     item["domains"] = doms
 
-    pts = extract_points(text, all_keys, title=item["title"]) if text else []
-    item["points"] = [{"label": point_label(p), "text": p} for p in pts]
-    item["attach_only"] = bool(text and not pts and re.search(r"\.(pdf|ofd|wps|docx?)\b", text, re.I))
+    if is_api:
+        n = item.get("_api_note") or ""
+        item["points"] = [{"label": "时限程序", "text": n}] if n else []
+        item["attach_only"] = False
+    else:
+        pts = extract_points(text, all_keys, title=item["title"]) if text else []
+        item["points"] = [{"label": point_label(p), "text": p} for p in pts]
+        item["attach_only"] = bool(
+            text and not pts and re.search(r"\.(pdf|ofd|wps|docx?)\b", text, re.I))
     item["note"] = ""
     if item["attach_only"]:
         item["note"] = "正文以 PDF/OFD 附件发布，无网页正文可摘抄"

@@ -383,6 +383,43 @@ def extract_points(text: str, keyword_pool: list[str], limit: int = 5, title: st
     return picked
 
 
+def _fmt_note(tpl: str, row: dict) -> str:
+    """把接口字段填进要点模板，日期只留年月日"""
+    vals = {}
+    for k, v in row.items():
+        s = "" if v is None else str(v)
+        if re.match(r"^\d{4}-\d{2}-\d{2}", s):
+            s = s[:10]
+        vals[k] = s
+    try:
+        return clean(tpl.format(**vals))
+    except Exception:
+        return clean(tpl)
+
+
+def fetch_api_candidates(src, cfg, fetcher):
+    """对接 JSON 接口型信息源（如全国人大法律草案征求意见）"""
+    api = src["api"]
+    raw = fetcher.get(api["list"], src.get("referer") or src["url"],
+                      cfg["collect"].get("timeout", 25))
+    data = json.loads(raw)
+    rows = data.get(api.get("rows_key", "rows")) or []
+    out = []
+    for r in rows:
+        title = clean(str(r.get(api.get("title_field", "title"), "")))
+        if not title:
+            continue
+        date = str(r.get(api.get("date_field", "date"), ""))[:10]
+        link = (api.get("link") or "").replace("{id}", str(r.get(api.get("id_field", "id"), "")))
+        out.append({
+            "title": title,
+            "url": link or src["url"],
+            "date_hint": date,
+            "_api_note": _fmt_note(api["note"], r) if api.get("note") else "",
+        })
+    return out
+
+
 # ---------------- 主流程 ----------------
 
 def process_source(src, cfg, fetcher, browser):
@@ -391,6 +428,28 @@ def process_source(src, cfg, fetcher, browser):
     c = cfg["collect"]
     status = {"name": name, "adapter": src.get("adapter", "html"), "ok": False,
               "candidates": 0, "hit": 0, "error": ""}
+
+    # 接口型信息源：直接读 JSON，不做页面解析
+    if src.get("adapter") == "api":
+        try:
+            cands = fetch_api_candidates(src, cfg, fetcher)
+            status["ok"] = True
+        except Exception as e:
+            status["error"] = f"{type(e).__name__}: {str(e)[:80]}"
+            return [], status
+        status["candidates"] = len(cands)
+        excl = cfg.get("exclude", [])
+        kw = src.get("keywords_any") or cfg["keywords"]["core"]
+        picked = []
+        for cd in cands:
+            t = cd["title"]
+            if any(x in t for x in excl):
+                continue
+            if not is_document(t):
+                continue
+            if any(k in t for k in kw):
+                picked.append(cd)
+        return picked[: c.get("max_candidates", 25)], status
     urls = [src["url"]] + list(src.get("urls") or [])
     cands, errors = [], []
     if src.get("discover", True):
