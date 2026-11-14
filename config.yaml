@@ -9,8 +9,8 @@ site:
 
 collect:
   month_only: true
-  timeout: 25
-  retry: 2
+  timeout: 40
+  retry: 3
   max_candidates: 25
   max_items_per_source: 12
   detail_concurrency: 6
@@ -113,7 +113,7 @@ sources:
 
   # ===== 碳市场 =====
   - {group: 碳市场, name: 中碳登, region: 国家, org: 全国碳排放权注册登记机构, adapter: html, url: "https://www.ccn.ac.cn/esg"}
-  - {group: 碳市场, name: 上海环交所, region: 上海, org: 上海环境能源交易所, adapter: html, url: "https://www.cneeex.com/"}
+  - {group: 碳市场, name: 上海环交所, region: 上海, org: 上海环境能源交易所, adapter: browser, url: "https://www.cneeex.com/"}
   - {group: 碳市场, name: 北京绿色交易所, region: 北京, org: 北京绿色交易所, adapter: html, url: "https://www.cbeex.com.cn/"}
 
   # ===== 臭氧层 / 再制造专项 =====
@@ -124,9 +124,9 @@ sources:
 
   # ===== 地方 =====
   - {group: 地方, name: 北京市经信局, region: 北京, org: 北京市经济和信息化局, adapter: html, url: "https://jxj.beijing.gov.cn/index.html"}
-  - {group: 地方, name: 天津市工信局, region: 天津, org: 天津市工业和信息化局, adapter: html, url: "https://gyxxh.tj.gov.cn/"}
+  - {group: 地方, name: 天津市工信局, region: 天津, org: 天津市工业和信息化局, adapter: browser, url: "https://gyxxh.tj.gov.cn/"}
   - {group: 地方, name: 河北省工信厅, region: 河北, org: 河北省工业和信息化厅, adapter: html, url: "https://gxt.hebei.gov.cn/hbgyhxxht/index/index.html"}
-  - {group: 地方, name: 唐山市工信局, region: 河北, org: 唐山市工业和信息化局, adapter: html, url: "https://gongxinju.tangshan.gov.cn/"}
+  - {group: 地方, name: 唐山市工信局, region: 河北, org: 唐山市工业和信息化局, adapter: browser, url: "https://gongxinju.tangshan.gov.cn/"}
   - {group: 地方, name: 山西省工信厅, region: 山西, org: 山西省工业和信息化厅, adapter: html, url: "https://gxt.shanxi.gov.cn/"}
   - {group: 地方, name: 辽宁省工信厅, region: 辽宁, org: 辽宁省工业和信息化厅, adapter: html, url: "https://gxt.ln.gov.cn/"}
   - {group: 地方, name: 大连市工信局, region: 辽宁, org: 大连市工业和信息化局, adapter: html, url: "https://gxj.dl.gov.cn/"}
@@ -150,7 +150,7 @@ sources:
   - {group: 地方, name: 宁夏工信厅, region: 宁夏, org: 宁夏回族自治区工业和信息化厅, adapter: html, url: "https://gxt.nx.gov.cn/"}
   - {group: 地方, name: 云南省工信厅, region: 云南, org: 云南省工业和信息化厅, adapter: html, url: "https://gxt.yn.gov.cn/"}
   - {group: 地方, name: 湖北省经信厅, region: 湖北, org: 湖北省经济和信息化厅, adapter: html, url: "https://jxt.hubei.gov.cn/"}
-  - {group: 地方, name: 河南省工信厅, region: 河南, org: 河南省工业和信息化厅, adapter: html, url: "https://gxt.henan.gov.cn/"}
+  - {group: 地方, name: 河南省工信厅, region: 河南, org: 河南省工业和信息化厅, adapter: browser, url: "https://gxt.henan.gov.cn/"}
   - {group: 地方, name: 福建省工信厅, region: 福建, org: 福建省工业和信息化厅, adapter: html, url: "https://gxt.fujian.gov.cn/"}
   - {group: 地方, name: 新疆工信厅, region: 新疆, org: 新疆维吾尔自治区工业和信息化厅, adapter: html, url: "https://gxt.xinjiang.gov.cn/"}
   - {group: 地方, name: 上海市经信委, region: 上海, org: 上海市经济和信息化委员会, adapter: html, enabled: false, url: "https://sheitc.sh.gov.cn/", note: "该域名在当前网络环境不可达，境内网络可启用"}
