@@ -13,3 +13,6 @@ Thumbs.db
 # 调试产物
 playwright-report/
 test-results/
+
+# 云端打包产物
+dist/

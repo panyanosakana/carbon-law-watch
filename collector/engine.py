@@ -109,6 +109,17 @@ class Browser:
     def __init__(self, wait_ms=3500):
         self.wait_ms = wait_ms
         self._pw = self._browser = None
+        self.usable = None          # None=未探测 / True / False
+
+    def available(self) -> bool:
+        """探测浏览器是否可用（云端精简环境常缺 chromium，探测一次即缓存）。"""
+        if self.usable is None:
+            try:
+                self.start()
+                self.usable = True
+            except Exception:
+                self.usable = False
+        return self.usable
 
     def start(self):
         if self._browser:
@@ -459,18 +470,28 @@ def process_source(src, cfg, fetcher, browser):
         return picked[: c.get("max_candidates", 25)], status
     urls = [src["url"]] + list(src.get("urls") or [])
     cands, errors = [], []
+
+    # 浏览器可降级：云端未装 chromium 时自动退回静态抓取（国内网络访问国内站通常无需渲染）
+    want_browser = src.get("adapter") == "browser"
+    use_browser = want_browser and browser is not None and browser.available()
+    if want_browser and not use_browser:
+        status["degraded"] = "浏览器不可用，已降级为静态抓取"
+
+    def fetch_html(u):
+        if use_browser:
+            return browser.get(u, timeout=50)
+        return fetcher.get(u, src.get("referer") or src["url"], c.get("timeout", 25))
+
     if src.get("discover", True):
         try:
-            home = (browser.get(urls[0], timeout=50) if src.get("adapter") == "browser"
-                    else fetcher.get(urls[0], src.get("referer") or urls[0], c.get("timeout", 25)))
+            home = fetch_html(urls[0])
             urls += [u for u in discover_columns(home, urls[0], c.get("discover_limit", 3))
                      if u not in urls]
         except Exception as e:
             errors.append(f"discover:{type(e).__name__}")
     for u in urls:
         try:
-            html = (browser.get(u, timeout=50) if src.get("adapter") == "browser"
-                    else fetcher.get(u, src.get("referer") or src["url"], c.get("timeout", 25)))
+            html = fetch_html(u)
             got = extract_candidates(html, u)
             cands += got
             status["ok"] = True

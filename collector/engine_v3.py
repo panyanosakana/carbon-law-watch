@@ -12,6 +12,7 @@
 输出：data/regulations.json、output/*.xlsx、单文件网页
 """
 import json
+import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -25,7 +26,10 @@ from engine import (CST, Browser, Fetcher, article_text, clean, extract_candidat
                     extract_points, find_doc_no, guess_org, is_document, normalize_title,
                     parse_date, process_source)
 
-ROOT = Path(__file__).resolve().parent.parent
+# ROOT：代码与配置所在目录（云端为函数代码目录）
+# OUT  ：产物写出目录（云端代码目录只读，需指向 /tmp）
+ROOT = Path(os.environ.get("LAW_ROOT") or Path(__file__).resolve().parent.parent)
+OUT = Path(os.environ.get("LAW_OUT_DIR") or ROOT)
 
 # 要点分类（提示词 4.2）
 POINT_LABELS = [
@@ -357,13 +361,13 @@ def main():
         "items": [{k: v for k, v in i.items() if not k.startswith("_")} for i in uniq],
     }
 
-    out = ROOT / cfg["output"]["json"]
+    out = OUT / cfg["output"]["json"]
     out.parent.mkdir(parents=True, exist_ok=True)
     text = json.dumps(payload, ensure_ascii=False, indent=2)
     out.write_text(text, encoding="utf-8")
 
     # 同步一份给网页（GitHub Pages 部署的是 docs/ 目录）
-    web_data = ROOT / "docs" / "data"
+    web_data = OUT / "docs" / "data"
     web_data.mkdir(parents=True, exist_ok=True)
     (web_data / "regulations.json").write_text(text, encoding="utf-8")
 
@@ -375,17 +379,18 @@ def main():
         if marker in tpl:
             standalone = tpl.replace(
                 marker, f"<script>window.__DATA__={json.dumps(payload, ensure_ascii=False)};</script>\n" + marker)
-            (ROOT / cfg["output"].get("standalone", "双碳法规监测-单文件版.html")).write_text(
+            (OUT / cfg["output"].get("standalone", "双碳法规监测-单文件版.html")).write_text(
                 standalone, encoding="utf-8")
 
     from export_excel_v3 import export
-    xlsx = export(payload, ROOT / cfg["output"]["excel_dir"])
+    xlsx = export(payload, OUT / cfg["output"]["excel_dir"])
 
     ok_src = sum(1 for s in statuses if s["ok"])
     covered = sum(1 for d in domain_rows if d["count"])
     print(f"\n[done] 源 {ok_src}/{len(statuses)} 成功 | 当月 {len(uniq)} 条 | "
           f"领域覆盖 {covered}/27 | 部委有独立发文 {sum(1 for m in ministries if m['count'])}/8")
     print(f"[done] Excel: {xlsx.name}")
+    return payload
 
 
 if __name__ == "__main__":
