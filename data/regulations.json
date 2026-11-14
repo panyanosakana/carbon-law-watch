@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-14 16:54:52",
-  "count": 9,
+  "updated_at": "2026-11-14 17:24:53",
+  "count": 10,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -190,8 +190,8 @@
         "光伏",
         "风电"
       ],
-      "candidates": 26,
-      "hits": 2,
+      "candidates": 27,
+      "hits": 3,
       "status": "有新增"
     },
     {
@@ -356,7 +356,7 @@
         "status": "有独立发文",
         "ids": [
           4,
-          9
+          10
         ],
         "note": ""
       },
@@ -434,13 +434,14 @@
       },
       {
         "name": "国家",
-        "count": 5,
+        "count": 6,
         "ids": [
           1,
           3,
           4,
-          8,
-          9
+          7,
+          9,
+          10
         ]
       },
       {
@@ -457,7 +458,7 @@
         "name": "山东",
         "count": 1,
         "ids": [
-          7
+          8
         ]
       },
       {
@@ -620,10 +621,11 @@
       },
       {
         "name": "可再生能源与储能",
-        "count": 2,
+        "count": 3,
         "ids": [
           1,
-          9
+          7,
+          10
         ],
         "status": "有"
       },
@@ -637,7 +639,7 @@
         "name": "再生资源回收利用",
         "count": 1,
         "ids": [
-          7
+          8
         ],
         "status": "有"
       },
@@ -697,7 +699,7 @@
         "name": "认证认可与合格评定",
         "count": 1,
         "ids": [
-          8
+          9
         ],
         "status": "有"
       },
@@ -866,7 +868,7 @@
     },
     {
       "item": "信息源：上海环交所",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 420, 6988B）"
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 420, 6987B）"
     },
     {
       "item": "信息源：天津市工信局",
@@ -878,7 +880,7 @@
     },
     {
       "item": "信息源：唐山市工信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 405, 4644B）"
+      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 405, 4642B）"
     },
     {
       "item": "信息源：山西省工信厅",
@@ -929,11 +931,20 @@
       "status": "未采集成功（TLS 握手失败（SSLError），境内网络可启用）"
     },
     {
-      "item": "6 条文件未在网页正文体现文号",
+      "item": "7 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
   "sources": [
+    {
+      "name": "全国人大法律草案征求意见",
+      "adapter": "api",
+      "ok": true,
+      "candidates": 5,
+      "hit": 1,
+      "error": "",
+      "group": "顶层"
+    },
     {
       "name": "中国政府网",
       "adapter": "browser",
@@ -1129,7 +1140,7 @@
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 420, 6988B",
+      "error": "discover:RuntimeError; RuntimeError: HTTP 420, 6987B",
       "group": "碳市场"
     },
     {
@@ -1210,7 +1221,7 @@
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 405, 4644B",
+      "error": "discover:RuntimeError; RuntimeError: HTTP 405, 4642B",
       "group": "地方"
     },
     {
@@ -1986,6 +1997,32 @@
       "week": "第一周（1—10日）"
     },
     {
+      "title": "可再生能源法（修订草案）征求意见",
+      "url": "http://www.npc.gov.cn/flcaw/userIndex.html?lid=ff808181a144173201a1a96d14e52b14",
+      "date_hint": "2026-11-06",
+      "date": "2026-11-06",
+      "doc_no": "",
+      "publisher": "全国人大及其常委会",
+      "region": "国家",
+      "level": "中央",
+      "source": "全国人大法律草案征求意见",
+      "nature": "征求意见稿",
+      "type": "",
+      "domains": [
+        "可再生能源与储能"
+      ],
+      "points": [
+        {
+          "label": "时限程序",
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 110 人参与、收到 183 条意见"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 7,
+      "week": "第一周（1—10日）"
+    },
+    {
       "title": "山东支持再生资源回收利用企业融合发展，一次性补助如何申报？",
       "url": "http://gxt.shandong.gov.cn/art/2026/11/9/art_15171_10372136.html",
       "date_hint": "",
@@ -2024,7 +2061,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 7,
+      "no": 8,
       "week": "第一周（1—10日）"
     },
     {
@@ -2054,7 +2091,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 8,
+      "no": 9,
       "week": "第二周（11—17日）"
     },
     {
@@ -2075,7 +2112,7 @@
       "points": [],
       "attach_only": true,
       "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-13），可作口径参考：http://www.nea.gov.cn/home/zcfg/20261113/6a2b2141529448ddb8650df1784abe73/c.html",
-      "no": 9,
+      "no": 10,
       "week": "第二周（11—17日）"
     }
   ]
