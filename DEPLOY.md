@@ -51,7 +51,7 @@ gh repo create carbon-law-watch --public --source=. --remote=origin --push
 ⚠️ 网页上传的两个坑：
 
 - **`.github` 是隐藏目录**，拖拽时如果没带上，定时任务就不会存在。上传完成后刷新仓库首页，必须能看到 `.github/workflows/update.yml` 这个文件；没有的话，用 **Add file → Create new file**，文件名填 `.github/workflows/update.yml`，把本地该文件内容粘进去提交。
-- 不要只上传外层文件夹，要确保 `config.yaml`、`collector/`、`web/` 直接位于仓库根目录。
+- 不要只上传外层文件夹，要确保 `config.yaml`、`collector/`、`docs/` 直接位于仓库根目录。
 
 ---
 
@@ -69,7 +69,7 @@ gh repo create carbon-law-watch --public --source=. --remote=origin --push
 仓库 → **Settings** → 左侧 **Pages**：
 
 - **Source**：`Deploy from a branch`
-- **Branch**：`main`，文件夹选 **`/web`**（注意不是根目录）
+- **Branch**：`main`，文件夹选 **`/docs`**（注意不是根目录）
 - 点 **Save**
 
 等 1–2 分钟，页面顶部会显示网址：
@@ -86,7 +86,7 @@ gh repo create carbon-law-watch --public --source=. --remote=origin --push
 [done] Excel: 双碳法规汇总-2026-11.xlsx
 ```
 
-跑完后回仓库首页，会看到机器人自动提交了一条 `法规更新 2026-11-14`，`web/data/regulations.json` 已更新，网站随之刷新。
+跑完后回仓库首页，会看到机器人自动提交了一条 `法规更新 2026-11-14`，`docs/data/regulations.json` 已更新，网站随之刷新。
 
 ---
 
@@ -118,10 +118,10 @@ gh repo create carbon-law-watch --public --source=. --remote=origin --push
 → 没做上面「关键设置 1」，去开 Read and write permissions。
 
 **Q：网站打开是 404**
-→ Pages 分支文件夹要选 `/web` 而不是 `/`；刚开启时需等 1–2 分钟构建。
+→ Pages 分支文件夹要选 `/docs` 而不是 `/`；刚开启时需等 1–2 分钟构建。
 
 **Q：网站显示"数据加载失败"**
-→ 检查仓库里 `web/data/regulations.json` 是否存在。若只是本地打开 `web/index.html`，浏览器会因跨域拦截 fetch，这是正常的，请改用根目录的 `双碳法规监测-单文件版.html`。
+→ 检查仓库里 `docs/data/regulations.json` 是否存在。若只是本地打开 `docs/index.html`，浏览器会因跨域拦截 fetch，这是正常的，请改用根目录的 `双碳法规监测-单文件版.html`。
 
 **Q：抓取成功率比本地低**
 → GitHub 美国机房访问部分地方政府站点可能超时，属网络差异。失败源会在网页「信息源状态」标签页列出原因，不影响整体运行。

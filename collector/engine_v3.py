@@ -349,13 +349,13 @@ def main():
     text = json.dumps(payload, ensure_ascii=False, indent=2)
     out.write_text(text, encoding="utf-8")
 
-    # 同步一份给网页（GitHub Pages 部署的是 web/ 目录）
-    web_data = ROOT / "web" / "data"
+    # 同步一份给网页（GitHub Pages 部署的是 docs/ 目录）
+    web_data = ROOT / "docs" / "data"
     web_data.mkdir(parents=True, exist_ok=True)
     (web_data / "regulations.json").write_text(text, encoding="utf-8")
 
     # 单文件网页
-    tpl_path = ROOT / "web" / "index.html"
+    tpl_path = ROOT / "docs" / "index.html"
     if tpl_path.exists():
         tpl = tpl_path.read_text(encoding="utf-8")
         marker = "<script>\nconst esc"

@@ -37,7 +37,7 @@ carbon-law-watch/
 │   ├── engine.py                  # 采集引擎：抓取→解析→筛选→补全→去重
 │   ├── export_excel.py            # Excel 导出（法规清单 + 采集概览）
 │   └── requirements.txt
-├── web/index.html                 # 网站：当月法规 / 近期参考 / 信息源状态
+├── docs/index.html                 # 网站：当月法规 / 近期参考 / 信息源状态
 ├── data/regulations.json          # 网站数据
 ├── output/双碳法规汇总-YYYY-MM.xlsx  # Excel 交付件（每月一个文件）
 └── .github/workflows/update.yml   # 每日 08:00（北京时间）自动运行
@@ -49,13 +49,13 @@ carbon-law-watch/
 pip install -r collector/requirements.txt
 python -m playwright install chromium     # 首次需要（用于 JS 渲染站点）
 python collector/engine.py                # 生成 data/*.json 与 output/*.xlsx
-cd web && python3 -m http.server 8000     # 浏览 http://localhost:8000
+cd docs && python3 -m http.server 8000     # 浏览 http://localhost:8000
 ```
 
 ## 五、部署到 GitHub（免费、无需积分）
 
 1. 新建仓库，推送到根目录
-2. **Settings → Pages**：Source 选 `main` + 根目录（若页面在 `web/`，把 `web` 目录设为发布源，或把 `web/` 内容移到根目录）
+2. **Settings → Pages**：Source 选 `Deploy from a branch`，分支 `main`，目录选 **`/docs`**
 3. **Actions → carbon-law-update → Run workflow** 手动跑一次验证
 4. 之后每天 08:00 自动采集、提交，网页与 Excel 同步更新；Excel 也会作为构建产物（Artifact）保留 30 天
 
