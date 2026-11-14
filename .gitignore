@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 本地临时
+.DS_Store
+Thumbs.db
+*.log
+/tmp/
+
+# 调试产物
+playwright-report/
+test-results/

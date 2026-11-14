@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>双碳法规监测 V3</title>
+<style>
+  :root{--bg:#f4f6f5;--card:#fff;--deep:#1f5c3d;--mid:#2e7d52;--gold:#c9a227;--muted:#6b7280;--line:#e4e9e6;--red:#c0392b;--amber:#b7791f}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:#1f2937;line-height:1.62}
+  header{background:linear-gradient(135deg,#123523,#1f5c3d 55%,#2e7d52);color:#fff;padding:34px 20px 26px}
+  .hd{max-width:1100px;margin:0 auto}
+  header h1{font-size:25px;letter-spacing:2px;font-weight:600;margin-bottom:6px}
+  header p{opacity:.8;font-size:13px}
+  .kpis{display:flex;gap:30px;margin-top:16px;flex-wrap:wrap}
+  .kpi b{font-size:21px;color:var(--gold);font-weight:600}
+  .kpi span{font-size:12px;opacity:.75;margin-left:5px}
+  .wrap{max-width:1100px;margin:0 auto;padding:20px 16px 44px}
+
+  .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .panel h3{font-size:14px;color:var(--deep);margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .panel h3 small{font-weight:400;color:var(--muted);font-size:11.5px}
+  .kwgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(182px,1fr));gap:7px;margin-top:11px}
+  .kw{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:6px 10px;border:1px solid var(--line);border-radius:7px;font-size:12.5px;cursor:pointer;background:#fcfdfc;transition:.12s}
+  .kw:hover{border-color:var(--mid);background:#f4faf6}
+  .kw.on{border-color:var(--deep);background:#e8f3ec;box-shadow:inset 0 0 0 1px var(--deep)}
+  .kw .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .kw .ct{font-weight:600;font-size:12px;min-width:18px;text-align:right}
+  .kw.hit .ct{color:var(--deep)}
+  .kw.zero .ct{color:#c2c9c5}
+  .dot{width:6px;height:6px;border-radius:50%;flex:0 0 6px}
+  .dot.ok{background:var(--mid)} .dot.warn{background:var(--amber)} .dot.no{background:#cdd5d1}
+  .legend{font-size:11.5px;color:var(--muted);margin-top:9px;display:flex;gap:14px;flex-wrap:wrap}
+  .ministry{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+  .mchip{font-size:12px;padding:4px 10px;border-radius:6px;border:1px solid var(--line);background:#fcfdfc}
+  .mchip.has{border-color:#bfdcc9;background:#eef7f1;color:var(--deep)}
+  .mchip.none{color:#9aa4a0;border-style:dashed}
+  .mchip b{font-weight:600}
+
+  .tabs{display:flex;gap:24px;border-bottom:1px solid var(--line);margin-bottom:14px;overflow-x:auto}
+  .tab{padding:9px 2px 11px;font-size:14px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+  .tab.on{color:var(--deep);border-color:var(--deep);font-weight:600}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+  #q{flex:1;min-width:180px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;font-size:13px;outline:none}
+  #q:focus{border-color:var(--mid)}
+  .chip{padding:4px 11px;border-radius:99px;background:#fff;border:1px solid var(--line);font-size:12.5px;cursor:pointer;color:#374151}
+  .chip.on{background:var(--deep);color:#fff;border-color:var(--deep)}
+  .wk{font-size:13px;font-weight:600;color:var(--deep);margin:18px 0 8px;padding-left:9px;border-left:3px solid var(--gold)}
+  .card{background:#fff;border-radius:10px;padding:15px 18px;margin-bottom:11px;border-left:3px solid var(--mid);box-shadow:0 1px 3px rgba(0,0,0,.045)}
+  .card h2{font-size:15.5px;font-weight:600;line-height:1.55;margin-bottom:7px;color:#14261c}
+  .card h2 .no{color:var(--mid);margin-right:6px;font-size:13px}
+  .card h2 a{color:inherit;text-decoration:none}
+  .card h2 a:hover{color:var(--mid);text-decoration:underline}
+  .meta{font-size:12.5px;color:var(--muted);margin-bottom:8px}
+  .tag{display:inline-block;padding:1px 7px;border-radius:4px;margin-right:5px;font-size:11.5px}
+  .t-pub{background:#e7f0ea;color:#1f5c3d}
+  .t-reg{background:#fdf4e0;color:#8a6a12}
+  .t-dom{background:#eef2ff;color:#3949ab}
+  .t-nat{background:#f4eefb;color:#6b3fa0}
+  .points{margin:8px 0 4px}
+  .points li{list-style:none;font-size:13.3px;color:#374151;margin-bottom:5px;padding-left:2px}
+  .points .lb{color:var(--deep);font-weight:600}
+  .note{font-size:12.3px;color:#8a6a12;background:#fdf8ec;border-radius:6px;padding:5px 10px;margin-top:6px}
+  .link{font-size:12.5px;margin-top:6px}
+  .link a{color:#1a5fb4;text-decoration:none}
+  .link a:hover{text-decoration:underline}
+  .empty{text-align:center;color:var(--muted);padding:48px 0;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:var(--deep);color:#fff;font-weight:600;font-size:12.5px}
+  td.c{text-align:center}
+  .sec{font-size:13.5px;font-weight:600;color:var(--deep);margin:18px 0 8px}
+  footer{text-align:center;color:#9aa4a0;font-size:12px;padding:24px 16px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><div class="hd">
+  <h1 id="siteTitle">双碳法规监测 · V3</h1>
+  <p id="siteSub">27 个领域 · 50 余个官方渠道 · 当月法规政策自动收集</p>
+  <div class="kpis">
+    <div class="kpi"><b id="kCount">—</b><span>当月入库</span></div>
+    <div class="kpi"><b id="kDom">—</b><span>领域有新增</span></div>
+    <div class="kpi"><b id="kMin">—</b><span>重点部委有发文</span></div>
+    <div class="kpi"><b id="kSrc">—</b><span>信息源成功</span></div>
+    <div class="kpi"><b id="kUpd">—</b><span>更新时间</span></div>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <div class="panel">
+    <h3>关键词检索情况（27 个领域）<small id="kwSummary"></small></h3>
+    <div class="kwgrid" id="kwGrid"></div>
+    <div class="legend">
+      <span><i class="dot ok" style="display:inline-block"></i> 有新增（点击筛选）</span>
+      <span><i class="dot warn" style="display:inline-block"></i> 有候选未入库</span>
+      <span><i class="dot no" style="display:inline-block"></i> 本月无候选</span>
+      <span>※ 数字＝当月入库条数</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>8 个重点部委覆盖度 <small>无独立发文标注 △（提示词 3.2 / 附表三）</small></h3>
+    <div class="ministry" id="minGrid"></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab on" data-tab="list">当月法规（<span id="tabL">0</span>）</div>
+    <div class="tab" data-tab="cover">覆盖度自查</div>
+    <div class="tab" data-tab="ref">近期参考（<span id="tabR">0</span>）</div>
+    <div class="tab" data-tab="src">信息源状态（<span id="tabS">0</span>）</div>
+  </div>
+
+  <div id="panel-list">
+    <div class="bar">
+      <input id="q" placeholder="搜索文件名称、发文机关、文号、领域…">
+      <span class="chip on" id="clearDom" style="display:none">清除领域筛选</span>
+    </div>
+    <div id="list"><div class="empty">加载中…</div></div>
+  </div>
+
+  <div id="panel-cover" style="display:none"><div id="cover"></div></div>
+  <div id="panel-ref" style="display:none"><div id="refs"></div></div>
+  <div id="panel-src" style="display:none"><div id="srcs"></div></div>
+</div>
+
+<footer>专业信息收集助手 V3 · 要点为原文直接摘抄 · 每日自动更新</footer>
+
+<script>
+const esc = s => (s ?? "").toString().replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let DATA = {items: [], reference: [], sources: [], domain_stats: [], coverage: {ministries: [], regions: [], domains: []}};
+let DOM = null, KW = "";
+
+function card(it, showNo = true) {
+  const pts = (it.points || []).map(p =>
+    `<li><span class="lb">${esc(p.label)}：</span>${esc(p.text)}</li>`).join("");
+  const note = it.note ? `<div class="note">${esc(it.note)}</div>` : "";
+  return `<div class="card">
+    <h2>${showNo ? `<span class="no">${it.no}.</span>` : ""}<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a></h2>
+    <div class="meta">
+      <span class="tag t-pub">${esc(it.publisher)}</span>
+      ${it.doc_no ? `<span class="tag t-reg">${esc(it.doc_no)}</span>` : ""}
+      <span class="tag t-reg">${esc(it.region)}</span>
+      ${it.nature ? `<span class="tag t-nat">${esc(it.nature)}</span>` : ""}
+      ${(it.domains || []).map(d => `<span class="tag t-dom">${esc(d)}</span>`).join("")}
+      ${esc(it.date || "日期待核")}${it.week ? " · " + esc(it.week) : ""}
+    </div>
+    ${pts ? `<ul class="points">${pts}</ul>` : ""}
+    ${note}
+    <div class="link"><a href="${esc(it.url)}" target="_blank" rel="noopener">查看官方原文 →</a></div>
+  </div>`;
+}
+
+function renderList() {
+  let items = DATA.items.slice();
+  if (DOM) items = items.filter(i => (i.domains || []).includes(DOM));
+  if (KW) {
+    const k = KW.toLowerCase();
+    items = items.filter(i => (i.title + i.publisher + (i.doc_no || "") + (i.domains || []).join("")).toLowerCase().includes(k));
+  }
+  const box = document.getElementById("list");
+  if (!items.length) {
+    box.innerHTML = `<div class="empty">${DOM || KW ? "该条件下本月无条目" : "本月未检索到符合条件的法规"}，可查看「近期参考」。</div>`;
+    return;
+  }
+  let html = "", lastWeek = "";
+  items.forEach(it => {
+    if (it.week && it.week !== lastWeek) { html += `<div class="wk">${esc(it.week)}</div>`; lastWeek = it.week; }
+    html += card(it);
+  });
+  box.innerHTML = html;
+}
+
+function renderKw() {
+  const ds = DATA.domain_stats || [];
+  document.getElementById("kwGrid").innerHTML = ds.map(d => {
+    const dot = d.hits ? "ok" : (d.candidates ? "warn" : "no");
+    return `<div class="kw ${d.hits ? "hit" : "zero"} ${DOM === d.name ? "on" : ""}" data-dom="${esc(d.name)}" title="关键词：${esc((d.keys || []).join("、"))}">
+      <i class="dot ${dot}"></i><span class="nm">${esc(d.name)}</span><span class="ct">${d.hits || 0}</span></div>`;
+  }).join("");
+  document.querySelectorAll(".kw").forEach(el => el.onclick = () => {
+    const name = el.dataset.dom;
+    DOM = (DOM === name) ? null : name;
+    document.getElementById("clearDom").style.display = DOM ? "" : "none";
+    renderKw(); renderList();
+  });
+  const ok = ds.filter(d => d.hits).length, cand = ds.filter(d => !d.hits && d.candidates).length;
+  document.getElementById("kwSummary").textContent =
+    `｜有新增 ${ok} 个 · 有候选未入库 ${cand} 个 · 无候选 ${ds.length - ok - cand} 个`;
+}
+
+function renderMin() {
+  const ms = DATA.coverage.ministries || [];
+  document.getElementById("minGrid").innerHTML = ms.map(m =>
+    `<span class="mchip ${m.count ? "has" : "none"}">${esc(m.name)} <b>${m.count || 0}</b>${m.count ? "" : " △"}</span>`
+  ).join("");
+}
+
+function renderCover() {
+  const c = DATA.coverage;
+  let h = `<div class="panel" style="font-size:12.5px;color:#4b5563">排序规则：${esc(DATA.sort_rule || "")}<br>时间口径：${esc(DATA.time_rule || "")}</div>`;
+  h += `<div class="sec">① 部门维度（8 个重点部委）</div><table><tr><th>部门</th><th>条数</th><th>状态</th><th>条目编号</th></tr>`;
+  (c.ministries || []).forEach(m => {
+    h += `<tr><td>${esc(m.name)}</td><td class="c">${m.count}</td><td>${esc(m.status)}</td><td>${(m.ids || []).join("、") || "—"}</td></tr>`;
+  });
+  h += `</table><div class="sec">② 地区维度</div><table><tr><th>地区</th><th>条数</th><th>条目编号</th></tr>`;
+  (c.regions || []).forEach(r => {
+    h += `<tr><td>${esc(r.name)}</td><td class="c">${r.count}</td><td>${(r.ids || []).join("、") || "—"}</td></tr>`;
+  });
+  h += `</table><div class="sec">③ 领域维度（27 个）</div><table><tr><th>领域</th><th>条数</th><th>状态</th><th>条目编号</th></tr>`;
+  (c.domains || []).forEach(d => {
+    h += `<tr><td>${esc(d.name)}</td><td class="c">${d.count}</td><td style="${d.count ? "" : "color:#c0392b"}">${esc(d.status)}</td><td>${(d.ids || []).join("、") || "—"}</td></tr>`;
+  });
+  h += `</table>`;
+  if ((DATA.no_hit_domains || []).length) {
+    h += `<div class="sec">④ 本月无新增领域 · 最近一次参考（附表四）</div>
+      <table><tr><th>领域</th><th>最近一次文件</th><th>时间</th><th>机关</th></tr>`;
+    DATA.no_hit_domains.forEach(n => {
+      h += `<tr><td>${esc(n.name)}</td><td>${esc(n.last_title || "本月及参考期内均未检索到")}</td><td>${esc(n.last_date || "—")}</td><td>${esc(n.last_publisher || "—")}</td></tr>`;
+    });
+    h += `</table>`;
+  }
+  if ((DATA.pending || []).length) {
+    h += `<div class="sec">⑤ 待核项（附表五）</div><table><tr><th>事项</th><th>状态</th></tr>`;
+    DATA.pending.forEach(p => h += `<tr><td>${esc(p.item)}</td><td>${esc(p.status)}</td></tr>`);
+    h += `</table>`;
+  }
+  document.getElementById("cover").innerHTML = h;
+}
+
+function renderRef() {
+  document.getElementById("refs").innerHTML = (DATA.reference || []).length
+    ? `<div class="panel" style="font-size:12.5px;color:#8a6a12">以下条目发布时间早于本月，仅作参考，不计入当月统计。</div>` +
+      DATA.reference.map(it => card(it, false)).join("")
+    : `<div class="empty">暂无参考条目</div>`;
+}
+
+function renderSrc() {
+  const s = DATA.sources || [];
+  document.getElementById("srcs").innerHTML =
+    `<div class="panel" style="font-size:12.5px">共 ${s.length} 个渠道，成功 ${s.filter(x => x.ok).length} 个</div>` +
+    `<table><tr><th>信息源</th><th>分组</th><th>方式</th><th>候选</th><th>入库</th><th>状态 / 备注</th></tr>` +
+    s.map(x => `<tr><td>${esc(x.name)}</td><td>${esc(x.group || "")}</td><td class="c">${esc(x.adapter)}</td>
+      <td class="c">${x.candidates || 0}</td><td class="c">${x.hit || 0}</td>
+      <td style="${x.ok ? "" : "color:#c0392b"}">${x.ok ? "正常" : esc(x.error || "未成功")}</td></tr>`).join("") +
+    `</table>`;
+}
+
+function apply(d) {
+  DATA = d;
+  if (d.site) {
+    document.getElementById("siteTitle").textContent = d.site.title + " · V3";
+    document.getElementById("siteSub").textContent = d.site.subtitle;
+  }
+  document.getElementById("tabL").textContent = d.count ?? 0;
+  document.getElementById("tabR").textContent = (d.reference || []).length;
+  document.getElementById("tabS").textContent = (d.sources || []).length;
+  document.getElementById("kCount").textContent = d.count ?? 0;
+  document.getElementById("kDom").textContent = (d.coverage?.domains || []).filter(x => x.count).length + "/27";
+  document.getElementById("kMin").textContent = (d.coverage?.ministries || []).filter(x => x.count).length + "/8";
+  document.getElementById("kSrc").textContent = (d.sources || []).filter(x => x.ok).length;
+  document.getElementById("kUpd").textContent = (d.updated_at || "").slice(5, 16);
+  renderKw(); renderMin(); renderList(); renderCover(); renderRef(); renderSrc();
+}
+
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+  document.querySelectorAll(".tab").forEach(x => x.classList.remove("on"));
+  t.classList.add("on");
+  ["list", "cover", "ref", "src"].forEach(k =>
+    document.getElementById("panel-" + k).style.display = (k === t.dataset.tab ? "" : "none"));
+});
+document.getElementById("q").oninput = e => { KW = e.target.value.trim(); renderList(); };
+document.getElementById("clearDom").onclick = () => {
+  DOM = null; document.getElementById("clearDom").style.display = "none"; renderKw(); renderList();
+};
+
+if (window.__DATA__) {
+  apply(window.__DATA__);
+} else {
+  fetch("data/regulations.json?t=" + Date.now())
+    .then(r => r.json()).then(apply)
+    .catch(() => document.getElementById("list").innerHTML =
+      `<div class="empty">数据加载失败：请确认 data/regulations.json 存在</div>`);
+}
+</script>
+</body>
+</html>
