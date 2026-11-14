@@ -59,6 +59,17 @@ cd docs && python3 -m http.server 8000     # 浏览 http://localhost:8000
 3. **Actions → carbon-law-update → Run workflow** 手动跑一次验证
 4. 之后每天 08:00 自动采集、提交，网页与 Excel 同步更新；Excel 也会作为构建产物（Artifact）保留 30 天
 
+### 5.1 国内部署（可选，解决境外 IP 抓不到地方站的问题）
+
+GitHub 服务器在境外，约 19 个地方政务站会连不上、4 个被 WAF 拦截。改用**阿里云函数计算**在国内网络采集，结果仍然提交回本仓库，网站与 Excel 不变：
+
+```bash
+python3 cloud/build_package.py     # 打包
+python3 cloud/deploy_fc.py         # 一键部署（含每天 08:30 定时触发器）
+```
+
+详细步骤、控制台手动部署方式、排错与成本见 **[`cloud/README.md`](cloud/README.md)**。免费额度足够，实际支出 0 元。
+
 ## 六、技术要点（为什么这样设计）
 
 1. **不写死 CSS 选择器**：采用「列表页 + 通用条目识别」，部委网站改版后多数仍可工作。
