@@ -89,15 +89,15 @@ sources:
   - {group: 顶层, name: 中国政府网, region: 国家, org: 国务院, adapter: browser, url: "https://www.gov.cn/zhengce/zuixin/"}
   - {group: 顶层, name: 全国人大网, region: 国家, org: 全国人大及其常委会, adapter: html, url: "http://www.npc.gov.cn/"}
   - {group: 顶层, name: 司法部, region: 国家, org: 司法部, adapter: html, url: "https://www.moj.gov.cn/flfggz/flfggzbmgz/"}
-  - {group: 顶层, name: 国家法律法规数据库, region: 国家, org: 全国人大, adapter: browser, url: "https://flk.npc.gov.cn/", enabled: false, note: "全库为 JS 单页应用，列表接口需交互参数，暂以全国人大网替代"}
+  - {group: 顶层, name: 国家法律法规数据库, region: 国家, org: 全国人大, adapter: browser, url: "https://flk.npc.gov.cn/", enabled: false, note: "全库为 JS 单页应用，列表接口需交互参数，暂以全国人大网替代", offshore_skip: true}
 
   # ===== 部委 =====
   - {group: 部委, name: 国家发展改革委, region: 国家, org: 国家发展改革委, adapter: html, url: "https://www.ndrc.gov.cn/xxgk/zcfb/tz/", urls: ["https://www.ndrc.gov.cn/xxgk/zcfb/gg/", "https://www.ndrc.gov.cn/xxgk/zcfb/fzggwl/"]}
   - {group: 部委, name: 工业和信息化部, region: 国家, org: 工业和信息化部, adapter: browser, url: "https://www.miit.gov.cn/zwgk/zcwj/index.html", urls: ["https://www.miit.gov.cn/zwgk/wjgs/index.html"]}
   - {group: 部委, name: 生态环境部, region: 国家, org: 生态环境部, adapter: html, url: "https://www.mee.gov.cn/zcwj/", urls: ["https://www.mee.gov.cn/zcwj/bwj/", "https://www.mee.gov.cn/zcwj/gwywj/"]}
   - {group: 部委, name: 财政部, region: 国家, org: 财政部, adapter: html, url: "https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/"}
-  - {group: 部委, name: 自然资源部, region: 国家, org: 自然资源部, adapter: html, url: "https://www.mnr.gov.cn/"}
-  - {group: 部委, name: 住房城乡建设部, region: 国家, org: 住房和城乡建设部, adapter: html, url: "https://www.mohurd.gov.cn/"}
+  - {group: 部委, name: 自然资源部, region: 国家, org: 自然资源部, adapter: html, url: "https://www.mnr.gov.cn/", offshore_skip: true}
+  - {group: 部委, name: 住房城乡建设部, region: 国家, org: 住房和城乡建设部, adapter: html, url: "https://www.mohurd.gov.cn/", offshore_skip: true}
   - {group: 部委, name: 交通运输部, region: 国家, org: 交通运输部, adapter: html, url: "https://www.mot.gov.cn/"}
   - {group: 部委, name: 商务部, region: 国家, org: 商务部, adapter: html, url: "https://www.mofcom.gov.cn/zcfb/index.html"}
   - {group: 部委, name: 国家能源局, region: 国家, org: 国家能源局, adapter: browser, url: "https://www.nea.gov.cn/zcfb/"}
@@ -117,7 +117,7 @@ sources:
 
   # ===== 碳市场 =====
   - {group: 碳市场, name: 中碳登, region: 国家, org: 全国碳排放权注册登记机构, adapter: html, url: "https://www.ccn.ac.cn/esg"}
-  - {group: 碳市场, name: 上海环交所, region: 上海, org: 上海环境能源交易所, adapter: browser, url: "https://www.cneeex.com/"}
+  - {group: 碳市场, name: 上海环交所, region: 上海, org: 上海环境能源交易所, adapter: browser, url: "https://www.cneeex.com/", offshore_skip: true}
   - {group: 碳市场, name: 北京绿色交易所, region: 北京, org: 北京绿色交易所, adapter: html, url: "https://www.cbeex.com.cn/"}
 
   # ===== 臭氧层 / 再制造专项 =====
@@ -128,37 +128,37 @@ sources:
 
   # ===== 地方 =====
   - {group: 地方, name: 北京市经信局, region: 北京, org: 北京市经济和信息化局, adapter: html, url: "https://jxj.beijing.gov.cn/index.html"}
-  - {group: 地方, name: 天津市工信局, region: 天津, org: 天津市工业和信息化局, adapter: browser, url: "https://gyxxh.tj.gov.cn/"}
-  - {group: 地方, name: 河北省工信厅, region: 河北, org: 河北省工业和信息化厅, adapter: html, url: "https://gxt.hebei.gov.cn/hbgyhxxht/index/index.html"}
-  - {group: 地方, name: 唐山市工信局, region: 河北, org: 唐山市工业和信息化局, adapter: browser, url: "https://gongxinju.tangshan.gov.cn/"}
-  - {group: 地方, name: 山西省工信厅, region: 山西, org: 山西省工业和信息化厅, adapter: html, url: "https://gxt.shanxi.gov.cn/"}
+  - {group: 地方, name: 天津市工信局, region: 天津, org: 天津市工业和信息化局, adapter: browser, url: "https://gyxxh.tj.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 河北省工信厅, region: 河北, org: 河北省工业和信息化厅, adapter: html, url: "https://gxt.hebei.gov.cn/hbgyhxxht/index/index.html", offshore_skip: true}
+  - {group: 地方, name: 唐山市工信局, region: 河北, org: 唐山市工业和信息化局, adapter: browser, url: "https://gongxinju.tangshan.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 山西省工信厅, region: 山西, org: 山西省工业和信息化厅, adapter: html, url: "https://gxt.shanxi.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 辽宁省工信厅, region: 辽宁, org: 辽宁省工业和信息化厅, adapter: html, url: "https://gxt.ln.gov.cn/"}
-  - {group: 地方, name: 大连市工信局, region: 辽宁, org: 大连市工业和信息化局, adapter: html, url: "https://gxj.dl.gov.cn/"}
+  - {group: 地方, name: 大连市工信局, region: 辽宁, org: 大连市工业和信息化局, adapter: html, url: "https://gxj.dl.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 山东省工信厅, region: 山东, org: 山东省工业和信息化厅, adapter: html, url: "http://gxt.shandong.gov.cn/"}
   - {group: 地方, name: 青岛市工信局, region: 山东, org: 青岛市工业和信息化局, adapter: html, url: "http://gxj.qingdao.gov.cn/"}
   - {group: 地方, name: 临沂市工信局, region: 山东, org: 临沂市工业和信息化局, adapter: html, url: "https://jw.linyi.gov.cn/"}
-  - {group: 地方, name: 浙江省经信厅, region: 浙江, org: 浙江省经济和信息化厅, adapter: html, url: "https://jxt.zj.gov.cn/"}
-  - {group: 地方, name: 杭州市经信局, region: 浙江, org: 杭州市经济和信息化局, adapter: html, url: "https://jxj.hangzhou.gov.cn/"}
-  - {group: 地方, name: 嘉兴市经信局, region: 浙江, org: 嘉兴市经济和信息化局, adapter: html, url: "https://jxj.jiaxing.gov.cn/"}
+  - {group: 地方, name: 浙江省经信厅, region: 浙江, org: 浙江省经济和信息化厅, adapter: html, url: "https://jxt.zj.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 杭州市经信局, region: 浙江, org: 杭州市经济和信息化局, adapter: html, url: "https://jxj.hangzhou.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 嘉兴市经信局, region: 浙江, org: 嘉兴市经济和信息化局, adapter: html, url: "https://jxj.jiaxing.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 江苏省工信厅, region: 江苏, org: 江苏省工业和信息化厅, adapter: html, url: "https://gxt.jiangsu.gov.cn/"}
   - {group: 地方, name: 苏州市工信局, region: 江苏, org: 苏州市工业和信息化局, adapter: html, url: "https://gxj.suzhou.gov.cn/"}
   - {group: 地方, name: 无锡市工信局, region: 江苏, org: 无锡市工业和信息化局, adapter: html, url: "https://gxj.wuxi.gov.cn/"}
   - {group: 地方, name: 广东省工信厅, region: 广东, org: 广东省工业和信息化厅, adapter: html, url: "https://gdii.gd.gov.cn/"}
   - {group: 地方, name: 广州市工信局, region: 广东, org: 广州市工业和信息化局, adapter: html, url: "https://gxj.gz.gov.cn/"}
   - {group: 地方, name: 珠海市工信局, region: 广东, org: 珠海市工业和信息化局, adapter: html, url: "https://www.zhuhai.gov.cn/gxj/gkmlpt/index"}
-  - {group: 地方, name: 深圳市工信局, region: 广东, org: 深圳市工业和信息化局, adapter: html, url: "http://gxj.sz.gov.cn/"}
+  - {group: 地方, name: 深圳市工信局, region: 广东, org: 深圳市工业和信息化局, adapter: html, url: "http://gxj.sz.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 江门市工信局, region: 广东, org: 江门市工业和信息化局, adapter: html, url: "https://www.jiangmen.gov.cn/bmpd/jmsgyhxxhj/"}
-  - {group: 地方, name: 重庆市经信委, region: 重庆, org: 重庆市经济和信息化委员会, adapter: html, url: "https://jjxxw.cq.gov.cn/"}
-  - {group: 地方, name: 四川省经信厅, region: 四川, org: 四川省经济和信息化厅, adapter: html, url: "https://jxt.sc.gov.cn/"}
-  - {group: 地方, name: 陕西省工信厅, region: 陕西, org: 陕西省工业和信息化厅, adapter: html, url: "https://gxt.shaanxi.gov.cn/"}
+  - {group: 地方, name: 重庆市经信委, region: 重庆, org: 重庆市经济和信息化委员会, adapter: html, url: "https://jjxxw.cq.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 四川省经信厅, region: 四川, org: 四川省经济和信息化厅, adapter: html, url: "https://jxt.sc.gov.cn/", offshore_skip: true}
+  - {group: 地方, name: 陕西省工信厅, region: 陕西, org: 陕西省工业和信息化厅, adapter: html, url: "https://gxt.shaanxi.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 宁夏工信厅, region: 宁夏, org: 宁夏回族自治区工业和信息化厅, adapter: html, url: "https://gxt.nx.gov.cn/"}
   - {group: 地方, name: 云南省工信厅, region: 云南, org: 云南省工业和信息化厅, adapter: html, url: "https://gxt.yn.gov.cn/"}
   - {group: 地方, name: 湖北省经信厅, region: 湖北, org: 湖北省经济和信息化厅, adapter: html, url: "https://jxt.hubei.gov.cn/"}
-  - {group: 地方, name: 河南省工信厅, region: 河南, org: 河南省工业和信息化厅, adapter: browser, url: "https://gxt.henan.gov.cn/"}
+  - {group: 地方, name: 河南省工信厅, region: 河南, org: 河南省工业和信息化厅, adapter: browser, url: "https://gxt.henan.gov.cn/", offshore_skip: true}
   - {group: 地方, name: 福建省工信厅, region: 福建, org: 福建省工业和信息化厅, adapter: html, url: "https://gxt.fujian.gov.cn/"}
   - {group: 地方, name: 新疆工信厅, region: 新疆, org: 新疆维吾尔自治区工业和信息化厅, adapter: html, url: "https://gxt.xinjiang.gov.cn/"}
-  - {group: 地方, name: 上海市经信委, region: 上海, org: 上海市经济和信息化委员会, adapter: html, enabled: false, url: "https://sheitc.sh.gov.cn/", note: "该域名在当前网络环境不可达，境内网络可启用"}
-  - {group: 地方, name: 江西省工信厅, region: 江西, org: 江西省工业和信息化厅, adapter: html, enabled: false, url: "https://gxt.jiangxi.gov.cn/", note: "TLS 握手失败（SSLError），境内网络可启用"}
+  - {group: 地方, name: 上海市经信委, region: 上海, org: 上海市经济和信息化委员会, adapter: html, enabled: false, url: "https://sheitc.sh.gov.cn/", note: "该域名在当前网络环境不可达，境内网络可启用", offshore_skip: true}
+  - {group: 地方, name: 江西省工信厅, region: 江西, org: 江西省工业和信息化厅, adapter: html, enabled: false, url: "https://gxt.jiangxi.gov.cn/", note: "TLS 握手失败（SSLError），境内网络可启用", offshore_skip: true}
 
 output:
   json: data/regulations.json

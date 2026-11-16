@@ -16,7 +16,10 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    # 境外网络访问国内政务站极慢，19 个境内专属源已跳过（迁移国内部署后移除该环境变量即恢复）
+    timeout-minutes: 120
+    env:
+      LAW_SKIP_OFFSHORE: "1"
     steps:
       - uses: actions/checkout@v4
 

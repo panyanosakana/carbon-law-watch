@@ -207,6 +207,12 @@ def main():
     domain_candidate = {d["name"]: 0 for d in domains}
 
     for src in cfg["sources"]:
+        if os.environ.get("LAW_SKIP_OFFSHORE") == "1" and src.get("offshore_skip"):
+            statuses.append({"name": src["name"], "group": src.get("group", ""),
+                             "adapter": src.get("adapter", "html"), "ok": False,
+                             "candidates": 0, "hit": 0,
+                             "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"})
+            continue
         if src.get("enabled", True) is False:
             statuses.append({"name": src["name"], "group": src.get("group", ""),
                              "adapter": "-", "ok": False, "candidates": 0, "hit": 0,
