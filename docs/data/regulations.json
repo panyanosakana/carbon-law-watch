@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-14 17:24:53",
-  "count": 10,
+  "updated_at": "2026-11-17 07:57:32",
+  "count": 15,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -45,7 +45,7 @@
         "清缴",
         "扩围"
       ],
-      "candidates": 36,
+      "candidates": 37,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -59,8 +59,8 @@
         "减排量"
       ],
       "candidates": 5,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "产品碳足迹",
@@ -92,8 +92,8 @@
         "绿色供应链",
         "绿色设计"
       ],
-      "candidates": 13,
-      "hits": 2,
+      "candidates": 15,
+      "hits": 4,
       "status": "有新增"
     },
     {
@@ -118,8 +118,8 @@
         "重点行业"
       ],
       "candidates": 13,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "工业节能与综合利用",
@@ -130,8 +130,8 @@
         "资源综合利用"
       ],
       "candidates": 4,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "绿证",
@@ -166,8 +166,8 @@
         "辅助服务"
       ],
       "candidates": 9,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "氢能",
@@ -203,8 +203,8 @@
         "资源循环"
       ],
       "candidates": 2,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "再生资源回收利用",
@@ -239,7 +239,7 @@
         "五大总成",
         "再制造件"
       ],
-      "candidates": 3,
+      "candidates": 5,
       "hits": 1,
       "status": "有新增"
     },
@@ -290,7 +290,7 @@
         "能源计量",
         "计量"
       ],
-      "candidates": 9,
+      "candidates": 7,
       "hits": 1,
       "status": "有新增"
     },
@@ -314,9 +314,9 @@
         "气候披露",
         "信息披露"
       ],
-      "candidates": 0,
-      "hits": 0,
-      "status": "无候选"
+      "candidates": 1,
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "认证认可与合格评定",
@@ -326,8 +326,8 @@
         "认可规则"
       ],
       "candidates": 7,
-      "hits": 1,
-      "status": "有新增"
+      "hits": 0,
+      "status": "有候选未入库"
     },
     {
       "name": "生态环境法典与执法",
@@ -336,7 +336,7 @@
         "生态环境执法",
         "执法检查"
       ],
-      "candidates": 1,
+      "candidates": 3,
       "hits": 0,
       "status": "有候选未入库"
     }
@@ -355,8 +355,8 @@
         "count": 2,
         "status": "有独立发文",
         "ids": [
-          4,
-          10
+          3,
+          12
         ],
         "note": ""
       },
@@ -369,10 +369,13 @@
       },
       {
         "name": "生态环境部",
-        "count": 0,
-        "status": "△ 无独立对口发文",
-        "ids": [],
-        "note": "本月未检索到该部门单独发文"
+        "count": 2,
+        "status": "有独立发文",
+        "ids": [
+          5,
+          9
+        ],
+        "note": ""
       },
       {
         "name": "财政部",
@@ -395,7 +398,7 @@
         "count": 1,
         "status": "有独立发文",
         "ids": [
-          3
+          4
         ],
         "note": ""
       },
@@ -417,7 +420,7 @@
         "name": "云南",
         "count": 1,
         "ids": [
-          6
+          13
         ]
       },
       {
@@ -434,14 +437,15 @@
       },
       {
         "name": "国家",
-        "count": 6,
+        "count": 7,
         "ids": [
           1,
           3,
           4,
-          7,
+          5,
+          8,
           9,
-          10
+          12
         ]
       },
       {
@@ -458,7 +462,7 @@
         "name": "山东",
         "count": 1,
         "ids": [
-          8
+          10
         ]
       },
       {
@@ -468,8 +472,10 @@
       },
       {
         "name": "广东",
-        "count": 0,
-        "ids": []
+        "count": 1,
+        "ids": [
+          15
+        ]
       },
       {
         "name": "新疆",
@@ -480,7 +486,7 @@
         "name": "江苏",
         "count": 1,
         "ids": [
-          5
+          7
         ]
       },
       {
@@ -505,13 +511,18 @@
       },
       {
         "name": "湖北",
-        "count": 0,
-        "ids": []
+        "count": 1,
+        "ids": [
+          14
+        ]
       },
       {
         "name": "福建",
-        "count": 0,
-        "ids": []
+        "count": 2,
+        "ids": [
+          6,
+          11
+        ]
       },
       {
         "name": "辽宁",
@@ -534,7 +545,7 @@
         "name": "碳达峰碳中和",
         "count": 1,
         "ids": [
-          4
+          3
         ],
         "status": "有"
       },
@@ -552,9 +563,11 @@
       },
       {
         "name": "CCER与碳信用",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          9
+        ],
+        "status": "有"
       },
       {
         "name": "产品碳足迹",
@@ -570,10 +583,12 @@
       },
       {
         "name": "绿色工厂与绿色制造",
-        "count": 2,
+        "count": 4,
         "ids": [
           2,
-          5
+          7,
+          14,
+          15
         ],
         "status": "有"
       },
@@ -585,15 +600,19 @@
       },
       {
         "name": "节能降碳",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          6
+        ],
+        "status": "有"
       },
       {
         "name": "工业节能与综合利用",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          6
+        ],
+        "status": "有"
       },
       {
         "name": "绿证",
@@ -609,9 +628,11 @@
       },
       {
         "name": "电力市场与煤电",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          11
+        ],
+        "status": "有"
       },
       {
         "name": "氢能",
@@ -624,22 +645,24 @@
         "count": 3,
         "ids": [
           1,
-          7,
-          10
+          8,
+          12
         ],
         "status": "有"
       },
       {
         "name": "循环经济",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          6
+        ],
+        "status": "有"
       },
       {
         "name": "再生资源回收利用",
         "count": 1,
         "ids": [
-          8
+          10
         ],
         "status": "有"
       },
@@ -653,7 +676,7 @@
         "name": "再制造（专项）",
         "count": 1,
         "ids": [
-          6
+          13
         ],
         "status": "有"
       },
@@ -679,7 +702,7 @@
         "name": "碳计量与能源计量",
         "count": 1,
         "ids": [
-          3
+          4
         ],
         "status": "有"
       },
@@ -691,17 +714,17 @@
       },
       {
         "name": "可持续披露ESG",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          5
+        ],
+        "status": "有"
       },
       {
         "name": "认证认可与合格评定",
-        "count": 1,
-        "ids": [
-          9
-        ],
-        "status": "有"
+        "count": 0,
+        "ids": [],
+        "status": "本月未检索到"
       },
       {
         "name": "生态环境法典与执法",
@@ -714,24 +737,17 @@
   "no_hit_domains": [
     {
       "name": "碳排放双控",
-      "last_title": "工业和信息化部关于印发《加快构建工业和信息化领域碳排放双控工作体系实施方案（2026—2030年）》的通知",
-      "last_date": "2026-10-26",
-      "last_url": "https://gxt.fujian.gov.cn/zwgk/ghjh/202610/t20261026_7240535.htm",
-      "last_publisher": "工业和信息化部"
-    },
-    {
-      "name": "全国碳市场",
-      "last_title": "商务部公告2026年第53号 公布2027年货物出口配额总量",
-      "last_date": "2026-10-29",
-      "last_url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_8324b318baf64feabb06f1cb22992f00.html",
-      "last_publisher": "商务部"
-    },
-    {
-      "name": "CCER与碳信用",
       "last_title": "",
       "last_date": "",
       "last_url": "",
       "last_publisher": ""
+    },
+    {
+      "name": "全国碳市场",
+      "last_title": "关于“加强国家ETS配额管理及MRV体系优化行业活动-纸浆和造纸行业咨询服务”招标延期的公告",
+      "last_date": "2026-10-30",
+      "last_url": "https://www.fecomee.org.cn/dtxx/tzgg/202610/t20261030_1184872.html",
+      "last_publisher": "生态环境部对外合作与交流中心"
     },
     {
       "name": "产品碳足迹",
@@ -755,20 +771,6 @@
       "last_publisher": ""
     },
     {
-      "name": "节能降碳",
-      "last_title": "",
-      "last_date": "",
-      "last_url": "",
-      "last_publisher": ""
-    },
-    {
-      "name": "工业节能与综合利用",
-      "last_title": "关于组织开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
-      "last_date": "2026-10-28",
-      "last_url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202610/t20261028_4921964.html",
-      "last_publisher": "北京市经济和信息化局"
-    },
-    {
       "name": "绿证",
       "last_title": "",
       "last_date": "",
@@ -783,25 +785,11 @@
       "last_publisher": ""
     },
     {
-      "name": "电力市场与煤电",
-      "last_title": "国家能源局关于推动煤电与新能源融合发展的实施意见",
-      "last_date": "2026-10-21",
-      "last_url": "http://www.nea.gov.cn/20261021/fbd5cb3be4584be88f63046ffb0155fc/c.html",
-      "last_publisher": "国家能源局"
-    },
-    {
       "name": "氢能",
       "last_title": "数字人解读《北京市氢能产业发展实施方案（2026—2030年）》",
       "last_date": "2026-10-30",
       "last_url": "https://jxj.beijing.gov.cn/zwgk/2024zcjd/202611/t20261109_4938965.html",
       "last_publisher": "北京市经济和信息化局"
-    },
-    {
-      "name": "循环经济",
-      "last_title": "",
-      "last_date": "",
-      "last_url": "",
-      "last_publisher": ""
     },
     {
       "name": "固体废物与危险废物",
@@ -826,10 +814,10 @@
     },
     {
       "name": "新化学物质",
-      "last_title": "新化学物质环境管理登记办法",
-      "last_date": "2026-10-26",
-      "last_url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202610/t20261027_1184708.html",
-      "last_publisher": "生态环境部"
+      "last_title": "",
+      "last_date": "",
+      "last_url": "",
+      "last_publisher": ""
     },
     {
       "name": "绿色金融与转型金融",
@@ -839,11 +827,11 @@
       "last_publisher": ""
     },
     {
-      "name": "可持续披露ESG",
-      "last_title": "",
-      "last_date": "",
-      "last_url": "",
-      "last_publisher": ""
+      "name": "认证认可与合格评定",
+      "last_title": "中国合格评定国家认可中心2026年度拟接收落户高校毕业生情况公示",
+      "last_date": "2026-10-30",
+      "last_url": "https://www.cnas.org.cn/zxzx/zxtz/art/2026/art_1887635826.html",
+      "last_publisher": "中国合格评定国家认可委员会"
     },
     {
       "name": "生态环境法典与执法",
@@ -856,82 +844,86 @@
   "pending": [
     {
       "item": "信息源：国家法律法规数据库",
-      "status": "未采集成功（全库为 JS 单页应用，列表接口需交互参数，暂以全国人大网替代）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：自然资源部",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：住房城乡建设部",
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
+    },
+    {
+      "item": "信息源：中碳登",
       "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
     },
     {
       "item": "信息源：上海环交所",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 420, 6987B）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：天津市工信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 403, 13B）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：河北省工信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：唐山市工信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 405, 4642B）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：山西省工信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：大连市工信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：浙江省经信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：杭州市经信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：嘉兴市经信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ReadTimeout）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：深圳市工信局",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：重庆市经信委",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：四川省经信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：陕西省工信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: ConnectionError）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：河南省工信厅",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 403, 1621B）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：上海市经信委",
-      "status": "未采集成功（该域名在当前网络环境不可达，境内网络可启用）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
       "item": "信息源：江西省工信厅",
-      "status": "未采集成功（TLS 握手失败（SSLError），境内网络可启用）"
+      "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "7 条文件未在网页正文体现文号",
+      "item": "11 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
@@ -975,11 +967,11 @@
     {
       "name": "国家法律法规数据库",
       "group": "顶层",
-      "adapter": "-",
+      "adapter": "browser",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "全库为 JS 单页应用，列表接口需交互参数，暂以全国人大网替代"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "国家发展改革委",
@@ -1004,7 +996,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 333,
-      "hit": 0,
+      "hit": 1,
       "error": "",
       "group": "部委"
     },
@@ -1019,27 +1011,27 @@
     },
     {
       "name": "自然资源部",
+      "group": "部委",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "部委"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "住房城乡建设部",
+      "group": "部委",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "部委"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 537,
+      "candidates": 539,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1057,7 +1049,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 235,
+      "candidates": 230,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1075,7 +1067,7 @@
       "name": "国家统计局",
       "adapter": "html",
       "ok": true,
-      "candidates": 83,
+      "candidates": 85,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1103,7 +1095,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 47,
-      "hit": 1,
+      "hit": 0,
       "error": "",
       "group": "认证标准"
     },
@@ -1126,22 +1118,31 @@
       "group": "认证标准"
     },
     {
-      "name": "中碳登",
+      "name": "生态环境部环境规划院",
       "adapter": "html",
       "ok": true,
-      "candidates": 1,
-      "hit": 0,
+      "candidates": 38,
+      "hit": 1,
       "error": "",
-      "group": "碳市场"
+      "group": "专项"
     },
     {
-      "name": "上海环交所",
+      "name": "中碳登",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 420, 6987B",
+      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
       "group": "碳市场"
+    },
+    {
+      "name": "上海环交所",
+      "group": "碳市场",
+      "adapter": "browser",
+      "ok": false,
+      "candidates": 0,
+      "hit": 0,
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "北京绿色交易所",
@@ -1199,39 +1200,39 @@
     },
     {
       "name": "天津市工信局",
-      "adapter": "html",
+      "group": "地方",
+      "adapter": "browser",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 403, 13B",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "河北省工信厅",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "唐山市工信局",
-      "adapter": "html",
+      "group": "地方",
+      "adapter": "browser",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 405, 4642B",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "山西省工信厅",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "辽宁省工信厅",
@@ -1244,12 +1245,12 @@
     },
     {
       "name": "大连市工信局",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "山东省工信厅",
@@ -1280,30 +1281,30 @@
     },
     {
       "name": "浙江省经信厅",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "杭州市经信局",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "嘉兴市经信局",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ReadTimeout",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "江苏省工信厅",
@@ -1346,7 +1347,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 109,
-      "hit": 0,
+      "hit": 2,
       "error": "",
       "group": "地方"
     },
@@ -1361,12 +1362,12 @@
     },
     {
       "name": "深圳市工信局",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "江门市工信局",
@@ -1379,30 +1380,30 @@
     },
     {
       "name": "重庆市经信委",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "四川省经信厅",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "陕西省工信厅",
+      "group": "地方",
       "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: ConnectionError",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "宁夏工信厅",
@@ -1418,7 +1419,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 122,
-      "hit": 2,
+      "hit": 4,
       "error": "",
       "group": "地方"
     },
@@ -1426,26 +1427,26 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 314,
-      "hit": 0,
+      "candidates": 316,
+      "hit": 1,
       "error": "",
       "group": "地方"
     },
     {
       "name": "河南省工信厅",
-      "adapter": "html",
+      "group": "地方",
+      "adapter": "browser",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 403, 1621B",
-      "group": "地方"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "福建省工信厅",
       "adapter": "html",
       "ok": true,
       "candidates": 185,
-      "hit": 0,
+      "hit": 3,
       "error": "",
       "group": "地方"
     },
@@ -1461,20 +1462,20 @@
     {
       "name": "上海市经信委",
       "group": "地方",
-      "adapter": "-",
+      "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "该域名在当前网络环境不可达，境内网络可启用"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     },
     {
       "name": "江西省工信厅",
       "group": "地方",
-      "adapter": "-",
+      "adapter": "html",
       "ok": false,
       "candidates": 0,
       "hit": 0,
-      "error": "TLS 握手失败（SSLError），境内网络可启用"
+      "error": "境外网络不可达，GitHub 运行时跳过（国内部署自动恢复）"
     }
   ],
   "reference": [
@@ -1494,6 +1495,90 @@
         "认证认可与合格评定"
       ],
       "points": [],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
+      "title": "关于“加强国家ETS配额管理及MRV体系优化行业活动-纸浆和造纸行业咨询服务”招标延期的公告",
+      "url": "https://www.fecomee.org.cn/dtxx/tzgg/202610/t20261030_1184872.html",
+      "date_hint": "2026-10-30",
+      "date": "2026-10-30",
+      "doc_no": "",
+      "publisher": "生态环境部对外合作与交流中心",
+      "region": "国家",
+      "level": "部委",
+      "source": "生态环境部对外合作与交流中心",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "全国碳市场"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "我中心于2026年9月3日发布了“世界银行 中国市场伙伴实施基金赠款项目（P504267） 加强国家ETS配额管理及MRV体系优化行业活动-纸浆和造纸行业咨询服务（PMI-11-CQS）”招标公告"
+        },
+        {
+          "label": "时限程序",
+          "text": "表示意向的单位请严格按照原咨询服务招标文件的要求准备投标文件，本次延期投标截止时间为2026年11月12日17：00"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
+      "title": "关于“加强国家ETS配额管理及MRV体系优化行业活动-钢铁行业咨询服务”招标延期的公告",
+      "url": "https://www.fecomee.org.cn/dtxx/tzgg/202610/t20261030_1184870.html",
+      "date_hint": "2026-10-30",
+      "date": "2026-10-30",
+      "doc_no": "",
+      "publisher": "生态环境部对外合作与交流中心",
+      "region": "国家",
+      "level": "部委",
+      "source": "生态环境部对外合作与交流中心",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "全国碳市场"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "我中心于2026年9月3日发布了“世界银行 中国市场伙伴实施基金赠款项目（P504267） 加强国家ETS配额管理及MRV体系优化行业活动-钢铁行业咨询服务（PMI-9-CQS）”招标公告"
+        },
+        {
+          "label": "时限程序",
+          "text": "表示意向的单位请严格按照原咨询服务招标文件的要求准备投标文件，本次延期投标截止时间为2026年11月12日17：00"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
+      "title": "关于“加强国家ETS配额管理及MRV体系优化行业活动-水泥行业咨询服务”招标延期的公告",
+      "url": "https://www.fecomee.org.cn/dtxx/tzgg/202610/t20261030_1184867.html",
+      "date_hint": "2026-10-30",
+      "date": "2026-10-30",
+      "doc_no": "",
+      "publisher": "生态环境部对外合作与交流中心",
+      "region": "国家",
+      "level": "部委",
+      "source": "生态环境部对外合作与交流中心",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "全国碳市场"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "我中心于2026年9月3日发布了“世界银行 中国市场伙伴实施基金赠款项目（P504267） 加强国家ETS配额管理及MRV体系优化行业活动-水泥行业咨询服务（PMI-8-CQS）”招标公告"
+        },
+        {
+          "label": "时限程序",
+          "text": "表示意向的单位请严格按照原咨询服务招标文件的要求准备投标文件，本次延期投标截止时间为2026年11月12日17：00"
+        }
+      ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准"
     },
@@ -1608,6 +1693,67 @@
       "note": "文号未在网页正文中体现，以正式文本为准"
     },
     {
+      "title": "省工业和信息化厅关于开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
+      "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202610/t20261029_4375744.html",
+      "date_hint": "2026-10-29",
+      "date": "2026-10-29",
+      "doc_no": "",
+      "publisher": "云南省工业和信息化厅",
+      "region": "云南",
+      "level": "地方",
+      "source": "云南省工信厅",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "工业节能与综合利用",
+        "再生资源回收利用"
+      ],
+      "points": [
+        {
+          "label": "时限程序",
+          "text": "已公告企业按要求开展年度自查，完成规范（准入）条件执行情况和企业年度报告，通过工业节能与绿色发展管理平台报送企业年度报告"
+        },
+        {
+          "label": "时限程序",
+          "text": "类再生资源综合利用企业自愿申报行业规范条件企业，新能源汽车动力电池综合利用规范条件企业申报另行通知"
+        },
+        {
+          "label": "时限程序",
+          "text": "请各申报企业按照规范（准入）条件要求，如实填报申请书及相关报表，对各项要求的符合性作出详细说明，提供相关证明材料（加盖企业公章），请于"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
+      "title": "关于“加强国家ETS配额管理及MRV体系优化行业活动-民航行业咨询服务”招标延期的公告",
+      "url": "https://www.fecomee.org.cn/dtxx/tzgg/202610/t20261028_1184757.html",
+      "date_hint": "2026-10-28",
+      "date": "2026-10-28",
+      "doc_no": "",
+      "publisher": "生态环境部对外合作与交流中心",
+      "region": "国家",
+      "level": "部委",
+      "source": "生态环境部对外合作与交流中心",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "全国碳市场"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "我中心于2026年9月3日发布了“世界银行中国市场伙伴实施基金赠款项目（P504267）加强国家ETS配额管理及MRV体系优化行业活动-民航行业咨询服务（PMI-12-CQS）”招标公告"
+        },
+        {
+          "label": "时限程序",
+          "text": "表示意向的单位请严格按照原咨询服务招标文件的要求准备投标文件，本次延期投标截止时间为2026年11月10日17：00"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
       "title": "关于组织开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
       "url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202610/t20261028_4921964.html",
       "date_hint": "2026-10-28",
@@ -1641,39 +1787,6 @@
       "note": "文号未在网页正文中体现，以正式文本为准"
     },
     {
-      "title": "省工业和信息化厅关于开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
-      "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202610/t20261029_4375744.html",
-      "date_hint": "",
-      "date": "2026-10-28",
-      "doc_no": "",
-      "publisher": "云南省工业和信息化厅",
-      "region": "云南",
-      "level": "地方",
-      "source": "云南省工信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "工业节能与综合利用",
-        "再生资源回收利用"
-      ],
-      "points": [
-        {
-          "label": "时限程序",
-          "text": "已公告企业按要求开展年度自查，完成规范（准入）条件执行情况和企业年度报告，通过工业节能与绿色发展管理平台报送企业年度报告"
-        },
-        {
-          "label": "时限程序",
-          "text": "类再生资源综合利用企业自愿申报行业规范条件企业，新能源汽车动力电池综合利用规范条件企业申报另行通知"
-        },
-        {
-          "label": "时限程序",
-          "text": "请各申报企业按照规范（准入）条件要求，如实填报申请书及相关报表，对各项要求的符合性作出详细说明，提供相关证明材料（加盖企业公章），请于"
-        }
-      ],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
       "title": "市场监管总局关于12项国家计量比对结果的通告",
       "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_af3e0bd109e346a396eefcb767918f5c.html",
       "date_hint": "",
@@ -1700,129 +1813,6 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
-      "title": "新化学物质环境管理登记办法",
-      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk02/202610/t20261027_1184708.html",
-      "date_hint": "2026-10-26",
-      "date": "2026-10-26",
-      "doc_no": "",
-      "publisher": "生态环境部",
-      "region": "国家",
-      "level": "部委",
-      "source": "生态环境部",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "新化学物质"
-      ],
-      "points": [
-        {
-          "label": "其他要求",
-          "text": "国家鼓励和支持新化学物质环境风险评估及控制技术的科学研究与推广应用，鼓励环境友好型化学物质及相关技术的研究与应用"
-        },
-        {
-          "label": "适用范围",
-          "text": "本办法适用于在中华人民共和国境内从事新化学物质生产、进口活动的环境管理登记，但进口后在海关特殊监管区域内存放且未经任何加工即全部出口的新化学物质除外"
-        },
-        {
-          "label": "其他要求",
-          "text": "新化学物质年生产量或者进口量10吨以上的，应当办理新化学物质环境管理常规登记（以下简称常规登记）"
-        },
-        {
-          "label": "奖惩监管",
-          "text": "从事新化学物质环境管理登记的工作人员和相关专家，不得披露依法应当予以保护的商业秘密"
-        },
-        {
-          "label": "其他要求",
-          "text": "设区的市级以上生态环境主管部门，应当对新化学物质生产者、进口者和加工使用者是否按要求落实新化学物质环境管理登记制度的情况进行监督抽查"
-        }
-      ],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
-      "title": "关于2026年北京市绿色工厂名单公示",
-      "url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202610/t20261026_4919059.html",
-      "date_hint": "2026-10-26",
-      "date": "2026-10-26",
-      "doc_no": "",
-      "publisher": "北京市经济和信息化局",
-      "region": "北京",
-      "level": "地方",
-      "source": "北京市经信局",
-      "nature": "公示/名单",
-      "type": "",
-      "domains": [
-        "绿色工厂与绿色制造"
-      ],
-      "points": [
-        {
-          "label": "其他要求",
-          "text": "为贯彻落实国家《绿色工厂梯度培育及管理暂行办法》及本市《绿色制造单位培育管理暂行办法》要求，根据《北京市经济和信息化局关于开展2026年度市级绿色工厂和绿色工业园区征集工作的通知》，我局开展了2026年北京市绿色工厂和绿色工业园区征集评审工作"
-        }
-      ],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
-      "title": "工业和信息化部关于印发《加快构建工业和信息化领域碳排放双控工作体系实施方案（2026—2030年）》的通知",
-      "url": "https://gxt.fujian.gov.cn/zwgk/ghjh/202610/t20261026_7240535.htm",
-      "date_hint": "",
-      "date": "2026-10-26",
-      "doc_no": "工信部节函〔2026〕343号",
-      "publisher": "工业和信息化部",
-      "region": "福建",
-      "level": "地方",
-      "source": "福建省工信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "碳排放双控"
-      ],
-      "points": [],
-      "attach_only": true,
-      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄"
-    },
-    {
-      "title": "国家能源局关于推动煤电与新能源融合发展的实施意见",
-      "url": "http://www.nea.gov.cn/20261021/fbd5cb3be4584be88f63046ffb0155fc/c.html",
-      "date_hint": "2026-10-21",
-      "date": "2026-10-21",
-      "doc_no": "国能发电力〔2026〕69号",
-      "publisher": "国家能源局",
-      "region": "国家",
-      "level": "部委",
-      "source": "国家能源局",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "电力市场与煤电"
-      ],
-      "points": [
-        {
-          "label": "奖惩监管",
-          "text": "加大中央资金支持力度，对符合条件的煤电与新能源融合项目予以资金补助"
-        },
-        {
-          "label": "目标任务",
-          "text": "支持新能源与公用煤电机组供热系统协同运行，提升煤电机组调峰顶峰能力等涉网性能，降低供热受阻比例"
-        },
-        {
-          "label": "其他要求",
-          "text": "支持各省级能源主管部门会同有关部门结合本地区实际制定本地区支持煤电与新能源融合发展的细化政策举措，明确电网线路资产处置要求、融合项目顶峰能力核定等，完善市场和价格机制，加强要素保障，指导电网企业、发电企业做好项目落地建设运行"
-        },
-        {
-          "label": "目标任务",
-          "text": "鼓励融合项目年度碳排放水平较融合前降低5%以上，力争降低10%以上"
-        },
-        {
-          "label": "目标任务",
-          "text": "鼓励融合项目年度碳排放水平应较融合前降低5%以上，力争降低10%以上"
-        }
-      ],
-      "attach_only": false,
-      "note": ""
     }
   ],
   "items": [
@@ -1878,6 +1868,27 @@
       "week": "第一周（1—10日）"
     },
     {
+      "title": "关于印发《实施全面节约战略行动方案》的通知",
+      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202611/t20261103_1408504.html",
+      "date_hint": "2026-11-03",
+      "date": "2026-11-03",
+      "doc_no": "发改环资〔2026〕1424号",
+      "publisher": "国家发展改革委",
+      "region": "国家",
+      "level": "部委",
+      "source": "国家发展改革委",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "碳达峰碳中和"
+      ],
+      "points": [],
+      "attach_only": true,
+      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-03），可作口径参考：https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408529.html；另有答记者问/解读（2026-11-03），可作口径参考：https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408528.html",
+      "no": 3,
+      "week": "第一周（1—10日）"
+    },
+    {
       "title": "市场监管总局关于印发《依法设置的计量检定机构能力评价和确认工作规范》的通知",
       "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_8ab1259339e541eb81ef1e68868189e6.html",
       "date_hint": "",
@@ -1916,28 +1927,77 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 3,
+      "no": 4,
       "week": "第一周（1—10日）"
     },
     {
-      "title": "关于印发《实施全面节约战略行动方案》的通知",
-      "url": "https://www.ndrc.gov.cn/xxgk/zcfb/tz/202611/t20261103_1408504.html",
-      "date_hint": "",
-      "date": "2026-11-04",
-      "doc_no": "发改环资〔2026〕1424号",
-      "publisher": "国家发展改革委",
+      "title": "环境规划院联合财联社发布《中国ESG发展报告：2026》",
+      "url": "http://www.caep.org.cn/ywdt/zc/202611/t20261103_1185179.html",
+      "date_hint": "2026-11-03",
+      "date": "2026-11-03",
+      "doc_no": "",
+      "publisher": "生态环境部环境规划院",
       "region": "国家",
       "level": "部委",
-      "source": "国家发展改革委",
-      "nature": "正式发文",
+      "source": "生态环境部环境规划院",
+      "nature": "政策动态",
       "type": "",
       "domains": [
-        "碳达峰碳中和"
+        "可持续披露ESG"
       ],
-      "points": [],
-      "attach_only": true,
-      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-04），可作口径参考：https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408529.html；另有答记者问/解读（2026-11-04），可作口径参考：https://www.ndrc.gov.cn/xxgk/jd/jd/202611/t20261103_1408528.html",
-      "no": 4,
+      "points": [
+        {
+          "label": "奖惩监管",
+          "text": "《中共中央国务院关于全面推进美丽中国建设的意见》中提出“深化环境信息依法披露制度改革，探索开展环境、社会、治理评价”的战略要求，党的二十届四中全会强化加快经济社会发展全面绿色转型、建设美丽中国的部署，充分发挥ESG在引导企业践行环境社会责任的作用…"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "下一步，我院将持续落实美丽中国建设要求，强化对深化环境信息依法披露制度改革、环境信息披露质量评估与监管等技术支撑，深入探索ESG信息披露与评价体系建设"
+        },
+        {
+          "label": "目标任务",
+          "text": "生态环境部环境规划院企业绿色治理中心主任董战峰研究员应邀出席论坛，并作题为《加快推进ESG体系建设的思路与重点任务》的主旨报告"
+        },
+        {
+          "label": "目标任务",
+          "text": "董战峰研究员指出，在“双碳”目标纵深推进、高质量发展成为核心命题的背景下，ESG已从企业可选项转变为重塑长期竞争力的必答题"
+        },
+        {
+          "label": "目标任务",
+          "text": "要站在中国式现代化、美丽中国建设、产业强国和高质量发展的大战略框架下，明确ESG的功能边界、治理逻辑和阶段性目标，围绕“管理提升—信息披露—评价应用—政策激励”等关键环节，加快构建中国特色ESG体系"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 5,
+      "week": "第一周（1—10日）"
+    },
+    {
+      "title": "福建省工业和信息化厅关于2026年第三批省级工业节能降碳和循环经济专项资金拟奖补项目的公示",
+      "url": "https://gxt.fujian.gov.cn/zwgk/gsgg/202611/t20261103_7243982.htm",
+      "date_hint": "2026-11-03",
+      "date": "2026-11-03",
+      "doc_no": "",
+      "publisher": "福建省工业和信息化厅",
+      "region": "福建",
+      "level": "地方",
+      "source": "福建省工信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "节能降碳",
+        "工业节能与综合利用",
+        "循环经济"
+      ],
+      "points": [
+        {
+          "label": "资金安排",
+          "text": "根据《关于推动制造业绿色低碳发展的若干措施》（闽工信规〔2025〕5号）、《省级工业节能降碳和循环经济专项资金管理办法》（闽财规〔2024〕19号），经研究，拟将福建德胜能源有限公司配套煤气工程节能减排改造升级项目等35个项目列为2026年第三批…"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 6,
       "week": "第一周（1—10日）"
     },
     {
@@ -1967,33 +2027,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 5,
-      "week": "第一周（1—10日）"
-    },
-    {
-      "title": "云南省报废机动车回收拆解企业资质认定情况公示",
-      "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202611/t20261105_4381077.html",
-      "date_hint": "",
-      "date": "2026-11-05",
-      "doc_no": "",
-      "publisher": "云南省工业和信息化厅",
-      "region": "云南",
-      "level": "地方",
-      "source": "云南省工信厅",
-      "nature": "公示/名单",
-      "type": "",
-      "domains": [
-        "再制造（专项）"
-      ],
-      "points": [
-        {
-          "label": "奖惩监管",
-          "text": "大理宏美再生资源利用有限责任公司和大理州物资再生利用有限责任公司"
-        }
-      ],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 6,
+      "no": 7,
       "week": "第一周（1—10日）"
     },
     {
@@ -2014,12 +2048,46 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 110 人参与、收到 183 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 116 人参与、收到 192 条意见"
         }
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 7,
+      "no": 8,
+      "week": "第一周（1—10日）"
+    },
+    {
+      "title": "关于发布《温室气体自愿减排项目方法学 乔木林经营碳汇（CCER—13—001—V01）》等2项方法学的通知",
+      "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk06/202611/t20261109_1185815.html",
+      "date_hint": "2026-11-09",
+      "date": "2026-11-09",
+      "doc_no": "环办气候函〔2026〕428号",
+      "publisher": "生态环境部",
+      "region": "国家",
+      "level": "部委",
+      "source": "生态环境部",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "CCER与碳信用"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "各地方生态环境、林草等主管部门应鼓励支持符合条件的乔木林经营碳汇、更新造林碳汇项目积极参与全国温室气体自愿减排交易市场并获得减排量收益"
+        },
+        {
+          "label": "其他要求",
+          "text": "如项目业主不是林木所有权人，除提供林木所有权证明文件外，还须提供林木所有权人与项目业主之间签订的减排量转让协议"
+        },
+        {
+          "label": "其他要求",
+          "text": "温室气体自愿减排项目方法学 更新造林碳汇（CCER—14—006—V01）"
+        }
+      ],
+      "attach_only": false,
+      "note": "",
+      "no": 9,
       "week": "第一周（1—10日）"
     },
     {
@@ -2061,38 +2129,50 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 8,
+      "no": 10,
       "week": "第一周（1—10日）"
     },
     {
-      "title": "【进行中】 关于CNAS-RL01《实验室认可规则》等四份文件修订公开征求意见的通知",
-      "url": "https://www.cnas.org.cn/zxzx/zqyj/art/2026/art_97f443bc0eba4c9bab598aadf6f6a928.html",
-      "date_hint": "2026-11-12",
-      "date": "2026-11-12",
+      "title": "福建省工业和信息化厅 福建省发展和改革委员会 福建省财政厅关于印发《福建省钢铁行业差别电价资金使用规定》的通知",
+      "url": "https://gxt.fujian.gov.cn/zwgk/zfxxgk/fdzdgknr/gfxwj/202611/t20261109_7246666.htm",
+      "date_hint": "2026-11-09",
+      "date": "2026-11-09",
       "doc_no": "",
-      "publisher": "中国合格评定国家认可委员会",
-      "region": "国家",
-      "level": "部委",
-      "source": "CNAS",
-      "nature": "征求意见稿",
+      "publisher": "福建省工业和信息化厅",
+      "region": "福建",
+      "level": "地方",
+      "source": "福建省工信厅",
+      "nature": "正式发文",
       "type": "",
       "domains": [
-        "认证认可与合格评定"
+        "电力市场与煤电"
       ],
       "points": [
         {
-          "label": "其他要求",
-          "text": "CNAS-CL01-G001:202×《检测和校准实验室能力认可准则的应用要求》征求意见稿及相关文件"
+          "label": "目标任务",
+          "text": "对钢铁冶炼企业建设以富氢/纯氢等清洁低碳氢源为还原剂的低碳冶炼装置，实现低碳钢产品产能利用率不低于50%且连续生产6个月以上的，每家企业给予不超过500万元奖励"
         },
         {
-          "label": "其他要求",
-          "text": "若相关单位和人员对文件有修改建议或意见，请填写《CNAS文件意见征询表》，并于2026年11月26日前反馈CNAS秘书处"
+          "label": "奖惩监管",
+          "text": "钢铁行业差别电价资金总额的90%主要用于支持奖励钢铁行业企业节能技术改造、淘汰落后和转型升级，10%用于弥补电网企业执行差别电价增加成本"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "对通过产能置换建设新冶炼装备并实现限制类冶炼装备退出，在完成产能置换一致性核验后，给予每家钢铁冶炼企业不超过2000万元一次性奖励"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "对高炉-转炉长流程炼钢转型为电炉短流程炼钢并同时退出高炉、转炉设备的项目，给予不超过500万元一次性奖励"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "省工信厅对企业申报材料进行审核或评审，提出拟奖励企业名单并在省工信厅网站公示5个工作日"
         }
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 9,
-      "week": "第二周（11—17日）"
+      "no": 11,
+      "week": "第一周（1—10日）"
     },
     {
       "title": "关于印发《“十五五”新型储能实施方案》的通知",
@@ -2112,7 +2192,80 @@
       "points": [],
       "attach_only": true,
       "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-13），可作口径参考：http://www.nea.gov.cn/home/zcfg/20261113/6a2b2141529448ddb8650df1784abe73/c.html",
-      "no": 10,
+      "no": 12,
+      "week": "第二周（11—17日）"
+    },
+    {
+      "title": "云南省报废机动车回收拆解企业资质认定情况公示",
+      "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202611/t20261116_4384439.html",
+      "date_hint": "2026-11-16",
+      "date": "2026-11-16",
+      "doc_no": "",
+      "publisher": "云南省工业和信息化厅",
+      "region": "云南",
+      "level": "地方",
+      "source": "云南省工信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "再制造（专项）"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "拟通过报废机动车（含电动汽车）回收拆解企业资质认定，现予以公示"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 13,
+      "week": "第二周（11—17日）"
+    },
+    {
+      "title": "年湖北省绿色制造名单公示",
+      "url": "https://jxt.hubei.gov.cn/fbjd/zc/qtzdgkwj/gsgg/202611/t20261116_6093747.shtml",
+      "date_hint": "2026-11-16",
+      "date": "2026-11-16",
+      "doc_no": "",
+      "publisher": "湖北省经济和信息化厅",
+      "region": "湖北",
+      "level": "地方",
+      "source": "湖北省经信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "绿色工厂与绿色制造"
+      ],
+      "points": [],
+      "attach_only": true,
+      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；文号未在网页正文中体现，以正式文本为准",
+      "no": 14,
+      "week": "第二周（11—17日）"
+    },
+    {
+      "title": "广州市工业和信息化局关于公布2026年度广州市第二批绿色工厂名单的通知",
+      "url": "https://gxj.gz.gov.cn/yw/tzgg/content/post_11104777.html",
+      "date_hint": "",
+      "date": "2026-11-16",
+      "doc_no": "",
+      "publisher": "广州市工业和信息化局",
+      "region": "广东",
+      "level": "地方",
+      "source": "广州市工信局",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "绿色工厂与绿色制造"
+      ],
+      "points": [
+        {
+          "label": "时限程序",
+          "text": "根据《广东省工业和信息化厅关于开展2026年度绿色工厂推荐和动态管理工作的通知》（粤工信节能函〔2026〕55号）、《广州市工业和信息化局关于印发广州市绿色工厂梯度培育及管理暂行办法的通知》要求，我局组织开展了2026年度第二批绿色工厂申报工作"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 15,
       "week": "第二周（11—17日）"
     }
   ]
