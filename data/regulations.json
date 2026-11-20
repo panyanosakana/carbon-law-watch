@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-19 08:55:01",
-  "count": 17,
+  "updated_at": "2026-11-20 08:47:44",
+  "count": 19,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -45,7 +45,7 @@
         "清缴",
         "扩围"
       ],
-      "candidates": 35,
+      "candidates": 34,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -104,8 +104,8 @@
         "近零碳",
         "零碳算力"
       ],
-      "candidates": 2,
-      "hits": 1,
+      "candidates": 3,
+      "hits": 3,
       "status": "有新增"
     },
     {
@@ -139,7 +139,7 @@
         "绿证",
         "绿色电力证书"
       ],
-      "candidates": 1,
+      "candidates": 2,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -468,8 +468,11 @@
       },
       {
         "name": "山东",
-        "count": 0,
-        "ids": []
+        "count": 2,
+        "ids": [
+          18,
+          19
+        ]
       },
       {
         "name": "山西",
@@ -600,9 +603,11 @@
       },
       {
         "name": "零碳工厂与园区",
-        "count": 1,
+        "count": 3,
         "ids": [
-          14
+          14,
+          18,
+          19
         ],
         "status": "有"
       },
@@ -857,10 +862,6 @@
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "信息源：全国标准信息公共服务平台",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 503, 7074B）"
-    },
-    {
       "item": "信息源：上海环交所",
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
@@ -988,7 +989,7 @@
       "name": "工业和信息化部",
       "adapter": "browser",
       "ok": true,
-      "candidates": 4,
+      "candidates": 3,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1033,7 +1034,7 @@
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 539,
+      "candidates": 538,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1051,7 +1052,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 229,
+      "candidates": 233,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1069,7 +1070,7 @@
       "name": "国家统计局",
       "adapter": "html",
       "ok": true,
-      "candidates": 81,
+      "candidates": 83,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1078,7 +1079,7 @@
       "name": "中国人民银行",
       "adapter": "html",
       "ok": true,
-      "candidates": 116,
+      "candidates": 115,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1087,7 +1088,7 @@
       "name": "国家认监委",
       "adapter": "html",
       "ok": true,
-      "candidates": 46,
+      "candidates": 45,
       "hit": 0,
       "error": "",
       "group": "认证标准"
@@ -1113,10 +1114,10 @@
     {
       "name": "全国标准信息公共服务平台",
       "adapter": "html",
-      "ok": false,
-      "candidates": 0,
+      "ok": true,
+      "candidates": 25,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 503, 7074B",
+      "error": "",
       "group": "认证标准"
     },
     {
@@ -1168,7 +1169,7 @@
       "name": "生态环境部对外合作与交流中心",
       "adapter": "html",
       "ok": true,
-      "candidates": 107,
+      "candidates": 109,
       "hit": 0,
       "error": "",
       "group": "专项"
@@ -1258,8 +1259,8 @@
       "name": "山东省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 62,
-      "hit": 0,
+      "candidates": 63,
+      "hit": 2,
       "error": "",
       "group": "地方"
     },
@@ -1276,7 +1277,7 @@
       "name": "临沂市工信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 91,
+      "candidates": 92,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1339,7 +1340,7 @@
       "name": "广东省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 119,
+      "candidates": 118,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1349,7 +1350,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 109,
-      "hit": 2,
+      "hit": 1,
       "error": "",
       "group": "地方"
     },
@@ -1429,7 +1430,7 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 318,
+      "candidates": 314,
       "hit": 1,
       "error": "",
       "group": "地方"
@@ -1447,7 +1448,7 @@
       "name": "福建省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 185,
+      "candidates": 187,
       "hit": 3,
       "error": "",
       "group": "地方"
@@ -2050,7 +2051,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 139 人参与、收到 222 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 143 人参与、收到 226 条意见"
         }
       ],
       "attach_only": false,
@@ -2344,6 +2345,86 @@
       "attach_only": false,
       "note": "",
       "no": 17,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "关于印发《山东省零碳工厂建设实施方案（试行）》的通知",
+      "url": "http://gxt.shandong.gov.cn/art/2026/11/19/art_15201_10374036.html",
+      "date_hint": "",
+      "date": "2026-11-19",
+      "doc_no": "鲁工信绿发〔2026〕206号",
+      "publisher": "山东省工业和信息化厅",
+      "region": "山东",
+      "level": "地方",
+      "source": "山东省工信厅",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "零碳工厂与园区"
+      ],
+      "points": [
+        {
+          "label": "目标任务",
+          "text": "各建设单位完成建设任务，经自查达到各项目标要求的，向市级工业和信息化局提出核验申请，核验通过的由各市工业和信息化局向省工业和信息化厅提出零碳工厂验收申请"
+        },
+        {
+          "label": "目标任务",
+          "text": "基本要求为不高于2吨二氧化碳/吨标准煤，目标要求为不高于0.2吨二氧化碳/吨标准煤"
+        },
+        {
+          "label": "其他要求",
+          "text": "为深入贯彻习近平生态文明思想，落实党中央、国务院加快经济社会发展全面绿色转型决策部署，加快推进全省工业绿色低碳转型，鼓励工业企业不断挖掘节能降碳潜力，积极建设零碳工厂，根据国务院办公厅《制造业绿色低碳发展行动方案（2025—2027年）》、工业和…"
+        },
+        {
+          "label": "适用范围",
+          "text": "该指标适用于年电力消费量500万千瓦时以上的申报单位"
+        },
+        {
+          "label": "目标任务",
+          "text": "按照自愿原则，申报单位对照培育建设评价指标开展自评，达到基本条件后，按要求编制零碳工厂建设方案，向市级工业和信息化局提出申请，各市工业和信息化局对申报材料进行初审，重点审核申报单位是否符合申报条件，以及相关数据和佐证材料的真实性、准确性、完整性，…"
+        }
+      ],
+      "attach_only": false,
+      "note": "",
+      "no": 18,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "关于组织开展2026年度省级零碳工厂培育建设工作的通知",
+      "url": "http://gxt.shandong.gov.cn/art/2026/11/19/art_15201_10374056.html",
+      "date_hint": "2026-11-19",
+      "date": "2026-11-19",
+      "doc_no": "鲁工信绿发函〔2026〕21号",
+      "publisher": "山东省工业和信息化厅",
+      "region": "山东",
+      "level": "地方",
+      "source": "山东省工信厅",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "零碳工厂与园区"
+      ],
+      "points": [
+        {
+          "label": "目标任务",
+          "text": "申报单位应满足《实施方案》的基本建设条件，且承诺建设期内通过不断优化，达到3项核心指标目标要求"
+        },
+        {
+          "label": "其他要求",
+          "text": "为深入贯彻习近平生态文明思想，落实工业和信息化部等五部门《关于开展零碳工厂建设工作的指导意见》有关要求，按照《山东省零碳工厂建设实施方案（试行）》（以下简称《实施方案》）部署，加快推进全省工业绿色低碳转型，现组织开展省级零碳工厂培育建设工作，有关…"
+        },
+        {
+          "label": "时限程序",
+          "text": "符合申报条件的单位，按照自愿参与原则，以2025年度数据为基准，按照《山东省零碳工厂建设评估指标体系及说明》要求开展自评，并编制零碳工厂建设方案，向市级 工业和信息化主管部门提出申请"
+        },
+        {
+          "label": "时限程序",
+          "text": "对符合要求，拟列入省级零碳工厂培育建设名单的单位，在省工业和信息化厅官方网站公示，经公示无异议后按程序公布"
+        }
+      ],
+      "attach_only": false,
+      "note": "",
+      "no": 19,
       "week": "第三周（18—24日）"
     }
   ]
