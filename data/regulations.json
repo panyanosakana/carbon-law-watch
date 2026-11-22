@@ -5,7 +5,7 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-21 08:51:17",
+  "updated_at": "2026-11-22 08:43:11",
   "count": 20,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
@@ -1036,7 +1036,7 @@
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 537,
+      "candidates": 538,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1054,7 +1054,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 234,
+      "candidates": 233,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1081,7 +1081,7 @@
       "name": "中国人民银行",
       "adapter": "html",
       "ok": true,
-      "candidates": 114,
+      "candidates": 115,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -2065,7 +2065,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 149 人参与、收到 246 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 151 人参与、收到 252 条意见"
         }
       ],
       "attach_only": false,
