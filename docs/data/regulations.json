@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-23 08:48:17",
-  "count": 20,
+  "updated_at": "2026-11-24 08:51:41",
+  "count": 21,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -92,8 +92,8 @@
         "绿色供应链",
         "绿色设计"
       ],
-      "candidates": 11,
-      "hits": 3,
+      "candidates": 8,
+      "hits": 2,
       "status": "有新增"
     },
     {
@@ -104,8 +104,8 @@
         "近零碳",
         "零碳算力"
       ],
-      "candidates": 2,
-      "hits": 2,
+      "candidates": 7,
+      "hits": 3,
       "status": "有新增"
     },
     {
@@ -117,8 +117,8 @@
         "能效",
         "重点行业"
       ],
-      "candidates": 14,
-      "hits": 2,
+      "candidates": 16,
+      "hits": 3,
       "status": "有新增"
     },
     {
@@ -129,8 +129,8 @@
         "工业固废",
         "资源综合利用"
       ],
-      "candidates": 4,
-      "hits": 1,
+      "candidates": 6,
+      "hits": 2,
       "status": "有新增"
     },
     {
@@ -239,7 +239,7 @@
         "五大总成",
         "再制造件"
       ],
-      "candidates": 5,
+      "candidates": 4,
       "hits": 1,
       "status": "有新增"
     },
@@ -290,7 +290,7 @@
         "能源计量",
         "计量"
       ],
-      "candidates": 8,
+      "candidates": 7,
       "hits": 3,
       "status": "有新增"
     },
@@ -365,7 +365,7 @@
         "count": 1,
         "status": "有独立发文",
         "ids": [
-          16
+          15
         ],
         "note": ""
       },
@@ -401,8 +401,8 @@
         "status": "有独立发文",
         "ids": [
           4,
-          16,
-          19
+          15,
+          18
         ],
         "note": ""
       },
@@ -431,9 +431,10 @@
       },
       {
         "name": "北京",
-        "count": 1,
+        "count": 2,
         "ids": [
-          2
+          2,
+          21
         ]
       },
       {
@@ -453,8 +454,8 @@
           9,
           12,
           13,
-          16,
-          19
+          15,
+          18
         ]
       },
       {
@@ -471,9 +472,9 @@
         "name": "山东",
         "count": 3,
         "ids": [
+          16,
           17,
-          18,
-          20
+          19
         ]
       },
       {
@@ -520,18 +521,17 @@
       },
       {
         "name": "湖北",
-        "count": 1,
-        "ids": [
-          15
-        ]
+        "count": 0,
+        "ids": []
       },
       {
         "name": "福建",
-        "count": 3,
+        "count": 4,
         "ids": [
           6,
           10,
-          11
+          11,
+          20
         ]
       },
       {
@@ -593,37 +593,39 @@
       },
       {
         "name": "绿色工厂与绿色制造",
-        "count": 3,
+        "count": 2,
         "ids": [
           2,
-          7,
-          15
+          7
         ],
         "status": "有"
       },
       {
         "name": "零碳工厂与园区",
-        "count": 2,
+        "count": 3,
         "ids": [
+          16,
           17,
-          18
+          21
         ],
         "status": "有"
       },
       {
         "name": "节能降碳",
-        "count": 2,
+        "count": 3,
         "ids": [
           6,
+          19,
           20
         ],
         "status": "有"
       },
       {
         "name": "工业节能与综合利用",
-        "count": 1,
+        "count": 2,
         "ids": [
-          6
+          6,
+          20
         ],
         "status": "有"
       },
@@ -717,8 +719,8 @@
         "count": 3,
         "ids": [
           4,
-          16,
-          19
+          15,
+          18
         ],
         "status": "有"
       },
@@ -928,7 +930,7 @@
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "12 条文件未在网页正文体现文号",
+      "item": "13 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
@@ -955,7 +957,7 @@
       "name": "全国人大网",
       "adapter": "html",
       "ok": true,
-      "candidates": 162,
+      "candidates": 163,
       "hit": 0,
       "error": "",
       "group": "顶层"
@@ -982,7 +984,7 @@
       "name": "国家发展改革委",
       "adapter": "html",
       "ok": true,
-      "candidates": 254,
+      "candidates": 259,
       "hit": 4,
       "error": "",
       "group": "部委"
@@ -1036,7 +1038,7 @@
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 538,
+      "candidates": 541,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1054,7 +1056,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 229,
+      "candidates": 235,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1081,7 +1083,7 @@
       "name": "中国人民银行",
       "adapter": "html",
       "ok": true,
-      "candidates": 116,
+      "candidates": 115,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1198,8 +1200,8 @@
       "name": "北京市经信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 140,
-      "hit": 1,
+      "candidates": 141,
+      "hit": 4,
       "error": "",
       "group": "地方"
     },
@@ -1271,7 +1273,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 67,
-      "hit": 0,
+      "hit": 2,
       "error": "RuntimeError: HTTP 200, 296B",
       "group": "地方"
     },
@@ -1342,7 +1344,7 @@
       "name": "广东省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 118,
+      "candidates": 121,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1424,7 +1426,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 122,
-      "hit": 4,
+      "hit": 3,
       "error": "",
       "group": "地方"
     },
@@ -1432,8 +1434,8 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 314,
-      "hit": 1,
+      "candidates": 318,
+      "hit": 0,
       "error": "",
       "group": "地方"
     },
@@ -1451,7 +1453,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 189,
-      "hit": 4,
+      "hit": 6,
       "error": "",
       "group": "地方"
     },
@@ -2065,7 +2067,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 154 人参与、收到 255 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 157 人参与、收到 259 条意见"
         }
       ],
       "attach_only": false,
@@ -2260,27 +2262,6 @@
       "week": "第二周（11—17日）"
     },
     {
-      "title": "年湖北省绿色制造名单公示",
-      "url": "https://jxt.hubei.gov.cn/fbjd/zc/qtzdgkwj/gsgg/202611/t20261116_6093747.shtml",
-      "date_hint": "2026-11-16",
-      "date": "2026-11-16",
-      "doc_no": "",
-      "publisher": "湖北省经济和信息化厅",
-      "region": "湖北",
-      "level": "地方",
-      "source": "湖北省经信厅",
-      "nature": "公示/名单",
-      "type": "",
-      "domains": [
-        "绿色工厂与绿色制造"
-      ],
-      "points": [],
-      "attach_only": true,
-      "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；文号未在网页正文中体现，以正式文本为准",
-      "no": 15,
-      "week": "第二周（11—17日）"
-    },
-    {
       "title": "市场监管总局办公厅 工业和信息化部办公厅关于公布计量支撑产业新质生产力发展2026年度重点项目的通知",
       "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_e79321a00cfc421881829bf63ce05c3a.html",
       "date_hint": "",
@@ -2311,7 +2292,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 16,
+      "no": 15,
       "week": "第三周（18—24日）"
     },
     {
@@ -2353,7 +2334,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 17,
+      "no": 16,
       "week": "第三周（18—24日）"
     },
     {
@@ -2391,13 +2372,13 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 18,
+      "no": 17,
       "week": "第三周（18—24日）"
     },
     {
       "title": "市场监管总局办公厅关于公布产业计量成果库第二批入库成果名单的通知",
       "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_e4ea56d1a8d74987830270282edf446f.html",
-      "date_hint": "2026-11-20",
+      "date_hint": "",
       "date": "2026-11-20",
       "doc_no": "市监计量函〔2026〕624号",
       "publisher": "市场监管总局",
@@ -2417,7 +2398,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 19,
+      "no": 18,
       "week": "第三周（18—24日）"
     },
     {
@@ -2451,7 +2432,84 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 19,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "福建省工业和信息化厅关于组织申报2026年工业节能降碳标准奖励的通知",
+      "url": "https://gxt.fujian.gov.cn/zwgk/zfxxgk/fdzdgknr/gzdt/202611/t20261120_7253140.htm",
+      "date_hint": "2026-11-20",
+      "date": "2026-11-20",
+      "doc_no": "",
+      "publisher": "福建省工业和信息化厅",
+      "region": "福建",
+      "level": "地方",
+      "source": "福建省工信厅",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "节能降碳",
+        "工业节能与综合利用"
+      ],
+      "points": [
+        {
+          "label": "奖惩监管",
+          "text": "为支持工业重点领域、重点行业节能降碳标准研究编制，根据我厅会同省财政厅等七部门联合印发的《关于推动制造业绿色低碳发展的若干措施》（闽工信规〔2025〕5号），现就组织申报工业节能降碳标准奖励通知如下"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "申报单位按照上述要求，向我厅提交《工业节能降碳标准奖励申报表》及相关佐证材料（纸质版一式三份，电子版同步发送工作邮箱），申报截止时间为2026年11月30日"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "我厅将在审核、公示的基础上，对符合条件的申报项目按规定拨付奖励资金"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
       "no": 20,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "北京市经济和信息化局关于组织开展北京市零碳工厂建设的通知",
+      "url": "https://jxj.beijing.gov.cn/zwgk/2024zcwj/202611/t20261123_4955490.html",
+      "date_hint": "2026-11-23",
+      "date": "2026-11-23",
+      "doc_no": "",
+      "publisher": "北京市经济和信息化局",
+      "region": "北京",
+      "level": "地方",
+      "source": "北京市经信局",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "零碳工厂与园区"
+      ],
+      "points": [
+        {
+          "label": "目标任务",
+          "text": "申报项目如为已建成项目，年综合能耗应不低于500吨标准煤，且已入选国家或市级绿色工厂名单"
+        },
+        {
+          "label": "目标任务",
+          "text": "算力设施申报主体应为算力设施所有者或运营者，在京注册且具有独立法人资格，算力设施产权清晰，具有明确、完整的物理边界，拥有独立的供配电和制冷系统，规模不小于3000个标准机架（智算中心除外），电能利用效率应达到《数据中心能效限定值及能效等级》（GB…"
+        },
+        {
+          "label": "目标任务",
+          "text": "申报主体应按年度完成建设方案确定的核心指标年度目标，确保在建设期内达到核心指标目标要求和至少5项引导性指标要求"
+        },
+        {
+          "label": "目标任务",
+          "text": "单位能耗碳排放，目标要求为不高于0.5吨二氧化碳/吨标准煤"
+        },
+        {
+          "label": "目标任务",
+          "text": "主要产品单位能耗达到或优于本行业能耗限额国家标准或地方标准1级（先进值）水平和《工业重点领域能效标准水平和基准水平》标杆水平，无上述标准或要求的，应达到行业领先水平"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 21,
       "week": "第三周（18—24日）"
     }
   ]
