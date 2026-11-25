@@ -5,7 +5,7 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-24 08:51:41",
+  "updated_at": "2026-11-25 08:55:14",
   "count": 21,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
@@ -104,8 +104,8 @@
         "近零碳",
         "零碳算力"
       ],
-      "candidates": 7,
-      "hits": 3,
+      "candidates": 6,
+      "hits": 2,
       "status": "有新增"
     },
     {
@@ -129,8 +129,8 @@
         "工业固废",
         "资源综合利用"
       ],
-      "candidates": 6,
-      "hits": 2,
+      "candidates": 8,
+      "hits": 3,
       "status": "有新增"
     },
     {
@@ -165,8 +165,8 @@
         "电价",
         "辅助服务"
       ],
-      "candidates": 9,
-      "hits": 2,
+      "candidates": 8,
+      "hits": 1,
       "status": "有新增"
     },
     {
@@ -226,9 +226,9 @@
         "固废",
         "危废"
       ],
-      "candidates": 4,
-      "hits": 0,
-      "status": "有候选未入库"
+      "candidates": 6,
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "再制造（专项）",
@@ -326,8 +326,8 @@
         "认可规则"
       ],
       "candidates": 8,
-      "hits": 0,
-      "status": "有候选未入库"
+      "hits": 1,
+      "status": "有新增"
     },
     {
       "name": "生态环境法典与执法",
@@ -356,7 +356,7 @@
         "status": "有独立发文",
         "ids": [
           3,
-          13
+          12
         ],
         "note": ""
       },
@@ -365,7 +365,7 @@
         "count": 1,
         "status": "有独立发文",
         "ids": [
-          15
+          14
         ],
         "note": ""
       },
@@ -401,8 +401,8 @@
         "status": "有独立发文",
         "ids": [
           4,
-          15,
-          18
+          14,
+          16
         ],
         "note": ""
       },
@@ -411,7 +411,7 @@
         "count": 1,
         "status": "有独立发文",
         "ids": [
-          12
+          11
         ],
         "note": ""
       }
@@ -426,7 +426,7 @@
         "name": "云南",
         "count": 1,
         "ids": [
-          14
+          13
         ]
       },
       {
@@ -434,7 +434,7 @@
         "count": 2,
         "ids": [
           2,
-          21
+          19
         ]
       },
       {
@@ -444,7 +444,7 @@
       },
       {
         "name": "国家",
-        "count": 10,
+        "count": 11,
         "ids": [
           1,
           3,
@@ -452,10 +452,11 @@
           5,
           8,
           9,
+          11,
           12,
-          13,
-          15,
-          18
+          14,
+          16,
+          21
         ]
       },
       {
@@ -470,11 +471,10 @@
       },
       {
         "name": "山东",
-        "count": 3,
+        "count": 2,
         "ids": [
-          16,
-          17,
-          19
+          15,
+          17
         ]
       },
       {
@@ -489,8 +489,10 @@
       },
       {
         "name": "新疆",
-        "count": 0,
-        "ids": []
+        "count": 1,
+        "ids": [
+          20
+        ]
       },
       {
         "name": "江苏",
@@ -526,12 +528,11 @@
       },
       {
         "name": "福建",
-        "count": 4,
+        "count": 3,
         "ids": [
           6,
           10,
-          11,
-          20
+          18
         ]
       },
       {
@@ -602,11 +603,10 @@
       },
       {
         "name": "零碳工厂与园区",
-        "count": 3,
+        "count": 2,
         "ids": [
-          16,
-          17,
-          21
+          15,
+          19
         ],
         "status": "有"
       },
@@ -615,16 +615,17 @@
         "count": 3,
         "ids": [
           6,
-          19,
-          20
+          17,
+          18
         ],
         "status": "有"
       },
       {
         "name": "工业节能与综合利用",
-        "count": 2,
+        "count": 3,
         "ids": [
           6,
+          18,
           20
         ],
         "status": "有"
@@ -643,10 +644,9 @@
       },
       {
         "name": "电力市场与煤电",
-        "count": 2,
+        "count": 1,
         "ids": [
-          10,
-          11
+          10
         ],
         "status": "有"
       },
@@ -662,7 +662,7 @@
         "ids": [
           1,
           8,
-          13
+          12
         ],
         "status": "有"
       },
@@ -678,21 +678,23 @@
         "name": "再生资源回收利用",
         "count": 1,
         "ids": [
-          12
+          11
         ],
         "status": "有"
       },
       {
         "name": "固体废物与危险废物",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          20
+        ],
+        "status": "有"
       },
       {
         "name": "再制造（专项）",
         "count": 1,
         "ids": [
-          14
+          13
         ],
         "status": "有"
       },
@@ -719,8 +721,8 @@
         "count": 3,
         "ids": [
           4,
-          15,
-          18
+          14,
+          16
         ],
         "status": "有"
       },
@@ -740,9 +742,11 @@
       },
       {
         "name": "认证认可与合格评定",
-        "count": 0,
-        "ids": [],
-        "status": "本月未检索到"
+        "count": 1,
+        "ids": [
+          21
+        ],
+        "status": "有"
       },
       {
         "name": "生态环境法典与执法",
@@ -803,13 +807,6 @@
       "last_publisher": "北京市经济和信息化局"
     },
     {
-      "name": "固体废物与危险废物",
-      "last_title": "",
-      "last_date": "",
-      "last_url": "",
-      "last_publisher": ""
-    },
-    {
       "name": "废旧动力电池",
       "last_title": "",
       "last_date": "",
@@ -836,13 +833,6 @@
       "last_date": "",
       "last_url": "",
       "last_publisher": ""
-    },
-    {
-      "name": "认证认可与合格评定",
-      "last_title": "中国合格评定国家认可中心2026年度拟接收落户高校毕业生情况公示",
-      "last_date": "2026-10-30",
-      "last_url": "https://www.cnas.org.cn/zxzx/zxtz/art/2026/art_1887635826.html",
-      "last_publisher": "中国合格评定国家认可委员会"
     },
     {
       "name": "生态环境法典与执法",
@@ -930,7 +920,7 @@
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "13 条文件未在网页正文体现文号",
+      "item": "14 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
@@ -957,7 +947,7 @@
       "name": "全国人大网",
       "adapter": "html",
       "ok": true,
-      "candidates": 163,
+      "candidates": 166,
       "hit": 0,
       "error": "",
       "group": "顶层"
@@ -995,7 +985,7 @@
       "ok": true,
       "candidates": 3,
       "hit": 0,
-      "error": "",
+      "error": "discover:Error",
       "group": "部委"
     },
     {
@@ -1038,7 +1028,7 @@
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 541,
+      "candidates": 544,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1056,7 +1046,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 235,
+      "candidates": 231,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1074,7 +1064,7 @@
       "name": "国家统计局",
       "adapter": "html",
       "ok": true,
-      "candidates": 82,
+      "candidates": 83,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1101,7 +1091,7 @@
       "name": "CNAS",
       "adapter": "html",
       "ok": true,
-      "candidates": 47,
+      "candidates": 48,
       "hit": 1,
       "error": "",
       "group": "认证标准"
@@ -1263,8 +1253,8 @@
       "name": "山东省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 62,
-      "hit": 3,
+      "candidates": 64,
+      "hit": 2,
       "error": "",
       "group": "地方"
     },
@@ -1281,7 +1271,7 @@
       "name": "临沂市工信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 90,
+      "candidates": 89,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1434,7 +1424,7 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 318,
+      "candidates": 320,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1452,8 +1442,8 @@
       "name": "福建省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 189,
-      "hit": 6,
+      "candidates": 190,
+      "hit": 5,
       "error": "",
       "group": "地方"
     },
@@ -1462,7 +1452,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 92,
-      "hit": 0,
+      "hit": 1,
       "error": "",
       "group": "地方"
     },
@@ -2067,7 +2057,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 157 人参与、收到 259 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 160 人参与、收到 263 条意见"
         }
       ],
       "attach_only": false,
@@ -2152,27 +2142,6 @@
       "week": "第一周（1—10日）"
     },
     {
-      "title": "图解 | 《福建省钢铁行业差别电价资金使用规定》",
-      "url": "https://gxt.fujian.gov.cn/jdhy/gxsth/h/tjzc/202611/t20261111_7248284.htm",
-      "date_hint": "2026-11-11",
-      "date": "2026-11-11",
-      "doc_no": "",
-      "publisher": "福建省工业和信息化厅",
-      "region": "福建",
-      "level": "地方",
-      "source": "福建省工信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "电力市场与煤电"
-      ],
-      "points": [],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 11,
-      "week": "第二周（11—17日）"
-    },
-    {
       "title": "商务部等9部门关于深入推进再生资源回收体系建设 促进回收行业高质量发展的意见",
       "url": "https://www.mofcom.gov.cn/zcfb/zc/art/2026/art_1c6148fb278d47e0bfa38e2e8a9d575c.html",
       "date_hint": "",
@@ -2211,7 +2180,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 12,
+      "no": 11,
       "week": "第二周（11—17日）"
     },
     {
@@ -2232,7 +2201,7 @@
       "points": [],
       "attach_only": true,
       "note": "正文以 PDF/OFD 附件发布，无网页正文可摘抄；另有答记者问/解读（2026-11-13），可作口径参考：http://www.nea.gov.cn/home/zcfg/20261113/6a2b2141529448ddb8650df1784abe73/c.html",
-      "no": 13,
+      "no": 12,
       "week": "第二周（11—17日）"
     },
     {
@@ -2258,7 +2227,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 14,
+      "no": 13,
       "week": "第二周（11—17日）"
     },
     {
@@ -2292,49 +2261,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 15,
-      "week": "第三周（18—24日）"
-    },
-    {
-      "title": "关于印发《山东省零碳工厂建设实施方案（试行）》的通知",
-      "url": "http://gxt.shandong.gov.cn/art/2026/11/19/art_15201_10374036.html",
-      "date_hint": "",
-      "date": "2026-11-19",
-      "doc_no": "鲁工信绿发〔2026〕206号",
-      "publisher": "山东省工业和信息化厅",
-      "region": "山东",
-      "level": "地方",
-      "source": "山东省工信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "零碳工厂与园区"
-      ],
-      "points": [
-        {
-          "label": "目标任务",
-          "text": "各建设单位完成建设任务，经自查达到各项目标要求的，向市级工业和信息化局提出核验申请，核验通过的由各市工业和信息化局向省工业和信息化厅提出零碳工厂验收申请"
-        },
-        {
-          "label": "目标任务",
-          "text": "基本要求为不高于2吨二氧化碳/吨标准煤，目标要求为不高于0.2吨二氧化碳/吨标准煤"
-        },
-        {
-          "label": "其他要求",
-          "text": "为深入贯彻习近平生态文明思想，落实党中央、国务院加快经济社会发展全面绿色转型决策部署，加快推进全省工业绿色低碳转型，鼓励工业企业不断挖掘节能降碳潜力，积极建设零碳工厂，根据国务院办公厅《制造业绿色低碳发展行动方案（2025—2027年）》、工业和…"
-        },
-        {
-          "label": "适用范围",
-          "text": "该指标适用于年电力消费量500万千瓦时以上的申报单位"
-        },
-        {
-          "label": "目标任务",
-          "text": "按照自愿原则，申报单位对照培育建设评价指标开展自评，达到基本条件后，按要求编制零碳工厂建设方案，向市级工业和信息化局提出申请，各市工业和信息化局对申报材料进行初审，重点审核申报单位是否符合申报条件，以及相关数据和佐证材料的真实性、准确性、完整性，…"
-        }
-      ],
-      "attach_only": false,
-      "note": "",
-      "no": 16,
+      "no": 14,
       "week": "第三周（18—24日）"
     },
     {
@@ -2372,7 +2299,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 17,
+      "no": 15,
       "week": "第三周（18—24日）"
     },
     {
@@ -2398,7 +2325,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 18,
+      "no": 16,
       "week": "第三周（18—24日）"
     },
     {
@@ -2432,7 +2359,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 19,
+      "no": 17,
       "week": "第三周（18—24日）"
     },
     {
@@ -2467,7 +2394,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 20,
+      "no": 18,
       "week": "第三周（18—24日）"
     },
     {
@@ -2509,8 +2436,60 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 21,
+      "no": 19,
       "week": "第三周（18—24日）"
+    },
+    {
+      "title": "关于自治区工业固体废物资源综合利用评价情况的公示",
+      "url": "https://gxt.xinjiang.gov.cn/gxt/tzgg/202611/f2e15443229f4570bbccadb9bc8c7eef.shtml",
+      "date_hint": "2026-11-24",
+      "date": "2026-11-24",
+      "doc_no": "",
+      "publisher": "新疆维吾尔自治区工业和信息化厅",
+      "region": "新疆",
+      "level": "地方",
+      "source": "新疆工信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "工业节能与综合利用",
+        "固体废物与危险废物"
+      ],
+      "points": [],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 20,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "【进行中】 关于CNAS-RL01《实验室认可规则》等四份文件修订公开征求意见的通知",
+      "url": "https://www.cnas.org.cn/zxzx/zqyj/art/2026/art_97f443bc0eba4c9bab598aadf6f6a928.html",
+      "date_hint": "",
+      "date": "2026-11-26",
+      "doc_no": "",
+      "publisher": "中国合格评定国家认可委员会",
+      "region": "国家",
+      "level": "部委",
+      "source": "CNAS",
+      "nature": "征求意见稿",
+      "type": "",
+      "domains": [
+        "认证认可与合格评定"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "CNAS-CL01-G001:202×《检测和校准实验室能力认可准则的应用要求》征求意见稿及相关文件"
+        },
+        {
+          "label": "其他要求",
+          "text": "若相关单位和人员对文件有修改建议或意见，请填写《CNAS文件意见征询表》，并于2026年11月26日前反馈CNAS秘书处"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 21,
+      "week": "第四周（25日—月末）"
     }
   ]
 }
