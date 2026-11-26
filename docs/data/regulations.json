@@ -5,8 +5,8 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-25 08:55:14",
-  "count": 21,
+  "updated_at": "2026-11-26 08:55:16",
+  "count": 23,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
   "domain_stats": [
@@ -45,7 +45,7 @@
         "清缴",
         "扩围"
       ],
-      "candidates": 34,
+      "candidates": 33,
       "hits": 0,
       "status": "有候选未入库"
     },
@@ -92,8 +92,8 @@
         "绿色供应链",
         "绿色设计"
       ],
-      "candidates": 8,
-      "hits": 2,
+      "candidates": 11,
+      "hits": 4,
       "status": "有新增"
     },
     {
@@ -104,7 +104,7 @@
         "近零碳",
         "零碳算力"
       ],
-      "candidates": 6,
+      "candidates": 5,
       "hits": 2,
       "status": "有新增"
     },
@@ -325,7 +325,7 @@
         "合格评定",
         "认可规则"
       ],
-      "candidates": 8,
+      "candidates": 7,
       "hits": 1,
       "status": "有新增"
     },
@@ -402,7 +402,7 @@
         "ids": [
           4,
           14,
-          16
+          15
         ],
         "note": ""
       },
@@ -455,8 +455,8 @@
           11,
           12,
           14,
-          16,
-          21
+          15,
+          23
         ]
       },
       {
@@ -473,8 +473,8 @@
         "name": "山东",
         "count": 2,
         "ids": [
-          15,
-          17
+          16,
+          18
         ]
       },
       {
@@ -484,8 +484,11 @@
       },
       {
         "name": "广东",
-        "count": 0,
-        "ids": []
+        "count": 2,
+        "ids": [
+          21,
+          22
+        ]
       },
       {
         "name": "新疆",
@@ -532,7 +535,7 @@
         "ids": [
           6,
           10,
-          18
+          17
         ]
       },
       {
@@ -594,10 +597,12 @@
       },
       {
         "name": "绿色工厂与绿色制造",
-        "count": 2,
+        "count": 4,
         "ids": [
           2,
-          7
+          7,
+          21,
+          22
         ],
         "status": "有"
       },
@@ -605,7 +610,7 @@
         "name": "零碳工厂与园区",
         "count": 2,
         "ids": [
-          15,
+          18,
           19
         ],
         "status": "有"
@@ -615,8 +620,8 @@
         "count": 3,
         "ids": [
           6,
-          17,
-          18
+          16,
+          17
         ],
         "status": "有"
       },
@@ -625,7 +630,7 @@
         "count": 3,
         "ids": [
           6,
-          18,
+          17,
           20
         ],
         "status": "有"
@@ -722,7 +727,7 @@
         "ids": [
           4,
           14,
-          16
+          15
         ],
         "status": "有"
       },
@@ -744,7 +749,7 @@
         "name": "认证认可与合格评定",
         "count": 1,
         "ids": [
-          21
+          23
         ],
         "status": "有"
       },
@@ -920,7 +925,7 @@
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "14 条文件未在网页正文体现文号",
+      "item": "17 条文件未在网页正文体现文号",
       "status": "以正式文本为准，已逐条标注"
     }
   ],
@@ -983,9 +988,9 @@
       "name": "工业和信息化部",
       "adapter": "browser",
       "ok": true,
-      "candidates": 3,
+      "candidates": 4,
       "hit": 0,
-      "error": "discover:Error",
+      "error": "",
       "group": "部委"
     },
     {
@@ -1046,7 +1051,7 @@
       "name": "国家能源局",
       "adapter": "browser",
       "ok": true,
-      "candidates": 231,
+      "candidates": 227,
       "hit": 3,
       "error": "",
       "group": "部委"
@@ -1064,7 +1069,7 @@
       "name": "国家统计局",
       "adapter": "html",
       "ok": true,
-      "candidates": 83,
+      "candidates": 85,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1190,7 +1195,7 @@
       "name": "北京市经信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 141,
+      "candidates": 142,
       "hit": 4,
       "error": "",
       "group": "地方"
@@ -1254,7 +1259,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 64,
-      "hit": 2,
+      "hit": 1,
       "error": "",
       "group": "地方"
     },
@@ -1262,7 +1267,7 @@
       "name": "青岛市工信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 67,
+      "candidates": 68,
       "hit": 2,
       "error": "RuntimeError: HTTP 200, 296B",
       "group": "地方"
@@ -1271,7 +1276,7 @@
       "name": "临沂市工信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 89,
+      "candidates": 90,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1335,7 +1340,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 121,
-      "hit": 0,
+      "hit": 3,
       "error": "",
       "group": "地方"
     },
@@ -1424,7 +1429,7 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 320,
+      "candidates": 319,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1442,7 +1447,7 @@
       "name": "福建省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 190,
+      "candidates": 188,
       "hit": 5,
       "error": "",
       "group": "地方"
@@ -1671,25 +1676,6 @@
       "note": "文号未在网页正文中体现，以正式文本为准"
     },
     {
-      "title": "商务部公告2026年第53号 公布2027年货物出口配额总量",
-      "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_8324b318baf64feabb06f1cb22992f00.html",
-      "date_hint": "2026-10-29",
-      "date": "2026-10-29",
-      "doc_no": "",
-      "publisher": "商务部",
-      "region": "国家",
-      "level": "部委",
-      "source": "商务部",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "全国碳市场"
-      ],
-      "points": [],
-      "attach_only": false,
-      "note": "文号未在网页正文中体现，以正式文本为准"
-    },
-    {
       "title": "省工业和信息化厅关于开展2026年度再生资源综合利用行业规范条件企业申报并做好已公告企业事中事后监管工作的通知",
       "url": "https://gxt.yn.gov.cn/zfxxgk/fdzdgknr/tzgg/202610/t20261029_4375744.html",
       "date_hint": "2026-10-29",
@@ -1818,6 +1804,34 @@
         {
           "label": "其他要求",
           "text": "设区的市级以上生态环境主管部门，应当对新化学物质生产者、进口者和加工使用者是否按要求落实新化学物质环境管理登记制度的情况进行监督抽查"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准"
+    },
+    {
+      "title": "市场监管总局关于12项国家计量比对结果的通告",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_af3e0bd109e346a396eefcb767918f5c.html",
+      "date_hint": "",
+      "date": "2026-10-27",
+      "doc_no": "",
+      "publisher": "市场监管总局",
+      "region": "国家",
+      "level": "部委",
+      "source": "市场监管总局",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "碳计量与能源计量"
+      ],
+      "points": [
+        {
+          "label": "适用范围",
+          "text": "通过国家计量比对主导实验室和技术专家对国家计量比对结果的技术审查、统计分析和综合评价，147家次初次比对结果符合规定要求，1家次初次比对结果偏离正常范围，经补测后达到规定要求"
+        },
+        {
+          "label": "奖惩监管",
+          "text": "为更好发挥计量比对在保障量值准确一致、支撑计量事中事后监管等方面的作用，市场监管总局组织实施了医用注射泵和输液泵检测仪检定装置计量比对等12项国家计量比对"
         }
       ],
       "attach_only": false,
@@ -2057,7 +2071,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 160 人参与、收到 263 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 167 人参与、收到 276 条意见"
         }
       ],
       "attach_only": false,
@@ -2265,44 +2279,6 @@
       "week": "第三周（18—24日）"
     },
     {
-      "title": "关于组织开展2026年度省级零碳工厂培育建设工作的通知",
-      "url": "http://gxt.shandong.gov.cn/art/2026/11/19/art_15201_10374056.html",
-      "date_hint": "",
-      "date": "2026-11-19",
-      "doc_no": "鲁工信绿发函〔2026〕21号",
-      "publisher": "山东省工业和信息化厅",
-      "region": "山东",
-      "level": "地方",
-      "source": "山东省工信厅",
-      "nature": "正式发文",
-      "type": "",
-      "domains": [
-        "零碳工厂与园区"
-      ],
-      "points": [
-        {
-          "label": "目标任务",
-          "text": "申报单位应满足《实施方案》的基本建设条件，且承诺建设期内通过不断优化，达到3项核心指标目标要求"
-        },
-        {
-          "label": "其他要求",
-          "text": "为深入贯彻习近平生态文明思想，落实工业和信息化部等五部门《关于开展零碳工厂建设工作的指导意见》有关要求，按照《山东省零碳工厂建设实施方案（试行）》（以下简称《实施方案》）部署，加快推进全省工业绿色低碳转型，现组织开展省级零碳工厂培育建设工作，有关…"
-        },
-        {
-          "label": "时限程序",
-          "text": "符合申报条件的单位，按照自愿参与原则，以2025年度数据为基准，按照《山东省零碳工厂建设评估指标体系及说明》要求开展自评，并编制零碳工厂建设方案，向市级 工业和信息化主管部门提出申请"
-        },
-        {
-          "label": "时限程序",
-          "text": "对符合要求，拟列入省级零碳工厂培育建设名单的单位，在省工业和信息化厅官方网站公示，经公示无异议后按程序公布"
-        }
-      ],
-      "attach_only": false,
-      "note": "",
-      "no": 15,
-      "week": "第三周（18—24日）"
-    },
-    {
       "title": "市场监管总局办公厅关于公布产业计量成果库第二批入库成果名单的通知",
       "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/jls/art/2026/art_e4ea56d1a8d74987830270282edf446f.html",
       "date_hint": "",
@@ -2325,7 +2301,7 @@
       ],
       "attach_only": false,
       "note": "",
-      "no": 16,
+      "no": 15,
       "week": "第三周（18—24日）"
     },
     {
@@ -2359,7 +2335,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 17,
+      "no": 16,
       "week": "第三周（18—24日）"
     },
     {
@@ -2390,6 +2366,32 @@
         {
           "label": "奖惩监管",
           "text": "我厅将在审核、公示的基础上，对符合条件的申报项目按规定拨付奖励资金"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 17,
+      "week": "第三周（18—24日）"
+    },
+    {
+      "title": "关于组织开展2026年度省级零碳工厂培育建设工作的通知",
+      "url": "http://gxj.qingdao.gov.cn/tzgg/202611/t20261123_10782746.shtml",
+      "date_hint": "2026-11-23",
+      "date": "2026-11-23",
+      "doc_no": "",
+      "publisher": "青岛市工业和信息化局",
+      "region": "山东",
+      "level": "地方",
+      "source": "青岛市工信局",
+      "nature": "正式发文",
+      "type": "",
+      "domains": [
+        "零碳工厂与园区"
+      ],
+      "points": [
+        {
+          "label": "时限程序",
+          "text": "将推荐文件、推荐汇总表、申报单位零碳工厂建设方案（含证明材料）纸质版一式一份"
         }
       ],
       "attach_only": false,
@@ -2462,6 +2464,58 @@
       "week": "第三周（18—24日）"
     },
     {
+      "title": "关于2026年度第二批省绿色工厂名单的公示",
+      "url": "https://gdii.gd.gov.cn/zwgk/tzgg1011/content/post_4984926.html",
+      "date_hint": "",
+      "date": "2026-11-25",
+      "doc_no": "",
+      "publisher": "广东省工业和信息化厅",
+      "region": "广东",
+      "level": "地方",
+      "source": "广东省工信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "绿色工厂与绿色制造"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "以单位名义反映情况的，请提供真实单位名称（加盖公章）、联系人、联系方式和反映事项书面证明材料等"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 21,
+      "week": "第四周（25日—月末）"
+    },
+    {
+      "title": "广东省工业和信息化厅关于2026年度第二批省绿色工厂名单的公示",
+      "url": "https://gdii.gd.gov.cn/zwgk/tzgg1011/content/post_4984926.html",
+      "date_hint": "",
+      "date": "2026-11-25",
+      "doc_no": "",
+      "publisher": "广东省工业和信息化厅",
+      "region": "广东",
+      "level": "地方",
+      "source": "广东省工信厅",
+      "nature": "公示/名单",
+      "type": "",
+      "domains": [
+        "绿色工厂与绿色制造"
+      ],
+      "points": [
+        {
+          "label": "其他要求",
+          "text": "以单位名义反映情况的，请提供真实单位名称（加盖公章）、联系人、联系方式和反映事项书面证明材料等"
+        }
+      ],
+      "attach_only": false,
+      "note": "文号未在网页正文中体现，以正式文本为准",
+      "no": 22,
+      "week": "第四周（25日—月末）"
+    },
+    {
       "title": "【进行中】 关于CNAS-RL01《实验室认可规则》等四份文件修订公开征求意见的通知",
       "url": "https://www.cnas.org.cn/zxzx/zqyj/art/2026/art_97f443bc0eba4c9bab598aadf6f6a928.html",
       "date_hint": "",
@@ -2488,7 +2542,7 @@
       ],
       "attach_only": false,
       "note": "文号未在网页正文中体现，以正式文本为准",
-      "no": 21,
+      "no": 23,
       "week": "第四周（25日—月末）"
     }
   ]
