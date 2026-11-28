@@ -5,7 +5,7 @@
   },
   "version": "V3",
   "month": "2026-11",
-  "updated_at": "2026-11-27 08:59:07",
+  "updated_at": "2026-11-28 08:55:02",
   "count": 23,
   "sort_rule": "按发布时间先后排列；同日按 中央 → 部委 → 地方；按月内自然周分节",
   "time_rule": "时间口径：成文日期优先，缺则用公开发布日期",
@@ -92,7 +92,7 @@
         "绿色供应链",
         "绿色设计"
       ],
-      "candidates": 13,
+      "candidates": 12,
       "hits": 5,
       "status": "有新增"
     },
@@ -867,10 +867,6 @@
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
     {
-      "item": "信息源：中国人民银行",
-      "status": "未采集成功（discover:RuntimeError; RuntimeError: HTTP 200, 345B）"
-    },
-    {
       "item": "信息源：上海环交所",
       "status": "未采集成功（境外网络不可达，GitHub 运行时跳过（国内部署自动恢复））"
     },
@@ -962,7 +958,7 @@
       "name": "全国人大网",
       "adapter": "html",
       "ok": true,
-      "candidates": 165,
+      "candidates": 163,
       "hit": 0,
       "error": "",
       "group": "顶层"
@@ -998,9 +994,9 @@
       "name": "工业和信息化部",
       "adapter": "browser",
       "ok": true,
-      "candidates": 4,
+      "candidates": 5,
       "hit": 0,
-      "error": "Error: Page.content: Unable to retrieve content because the page is",
+      "error": "",
       "group": "部委"
     },
     {
@@ -1043,7 +1039,7 @@
       "name": "交通运输部",
       "adapter": "html",
       "ok": true,
-      "candidates": 546,
+      "candidates": 543,
       "hit": 0,
       "error": "",
       "group": "部委"
@@ -1087,10 +1083,10 @@
     {
       "name": "中国人民银行",
       "adapter": "html",
-      "ok": false,
-      "candidates": 0,
+      "ok": true,
+      "candidates": 114,
       "hit": 0,
-      "error": "discover:RuntimeError; RuntimeError: HTTP 200, 345B",
+      "error": "",
       "group": "部委"
     },
     {
@@ -1205,7 +1201,7 @@
       "name": "北京市经信局",
       "adapter": "html",
       "ok": true,
-      "candidates": 142,
+      "candidates": 141,
       "hit": 4,
       "error": "",
       "group": "地方"
@@ -1350,7 +1346,7 @@
       "adapter": "html",
       "ok": true,
       "candidates": 121,
-      "hit": 3,
+      "hit": 2,
       "error": "",
       "group": "地方"
     },
@@ -1439,7 +1435,7 @@
       "name": "湖北省经信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 318,
+      "candidates": 316,
       "hit": 0,
       "error": "",
       "group": "地方"
@@ -1457,7 +1453,7 @@
       "name": "福建省工信厅",
       "adapter": "html",
       "ok": true,
-      "candidates": 185,
+      "candidates": 182,
       "hit": 4,
       "error": "",
       "group": "地方"
@@ -2071,7 +2067,7 @@
       "points": [
         {
           "label": "时限程序",
-          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 171 人参与、收到 280 条意见"
+          "text": "征求意见期 2026-11-06 至 2026-12-05；已有 173 人参与、收到 283 条意见"
         }
       ],
       "attach_only": false,
